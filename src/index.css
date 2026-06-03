@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@variant dark (&:where(.dark, .dark *));
+
+:root {
+  --royal-gold-color: #2E1065; /* In light mode, yellow gold text/elements become deep purple */
+}
+
+html.dark {
+  --royal-gold-color: #D4AF37; /* In dark mode, it remains luxurious yellow gold */
+}
+
+/* Cascade gold accent down in dark containers to maintain premium styling and clear contrast in light mode */
+.bg-zinc-950,
+.bg-midnight-royal,
+.bg-[#0A0A0B],
+.bg-black,
+.bg-deep-violet,
+.bg-violet-950,
+.bg-zinc-900,
+#contact-footer,
+.dark-container {
+  --royal-gold-color: #D4AF37 !important;
+}
+
+@theme {
+  --font-display: "Playfair Display", serif;
+  --font-sans: "Plus Jakarta Sans", sans-serif;
+  
+  --color-royal-gold: var(--royal-gold-color);
+  --color-gilded-ivory: #FDFBF7;
+  --color-midnight-royal: #0A0A0B;
+  --color-deep-violet: #2E1065;
+  --color-off-white: #fcf8f9;
+}
+
+@layer utilities {
+  .film-grain {
+    pointer-events: none;
+    background-image: url("https://www.transparenttextures.com/patterns/p6.png");
+  }
+}
+
+/* Custom fade transitions and backgrounds for dark mode */
+html {
+  background-color: var(--color-off-white);
+  color: #1f2937; /* Gray 800 */
+}
+
+html.dark {
+  background-color: var(--color-midnight-royal);
+  color: var(--color-gilded-ivory);
+}
+
+html, body {
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+/* In light mode, solid premium purple backgrounds (formerly gold/yellow) must render high-contrast white content */
+html:not(.dark) .bg-royal-gold {
+  color: #ffffff !important;
+}
+
+html:not(.dark) .bg-royal-gold *,
+html:not(.dark) .bg-royal-gold button,
+html:not(.dark) .bg-royal-gold span,
+html:not(.dark) .bg-royal-gold h1,
+html:not(.dark) .bg-royal-gold h2,
+html:not(.dark) .bg-royal-gold h3,
+html:not(.dark) .bg-royal-gold p {
+  color: #ffffff !important;
+  fill: #ffffff !important;
+}
+
+/* Support elegant micro-interactive reactions */
+html:not(.dark) .bg-royal-gold:hover {
+  opacity: 0.95 !important;
+}
+
+
