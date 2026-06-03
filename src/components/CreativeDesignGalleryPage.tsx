@@ -6,7 +6,7 @@ import { Project } from '../types';
 import ProjectModal from './ProjectModal';
 
 interface Props {
-  onNavigateToPage: (page: 'home' | 'about' | 'services' | 'portfolio' | 'creative-design-gallery' | 'contact') => void;
+  onNavigateToPage: (page: 'home' | 'about' | 'services' | 'portfolio' | 'creative-design-gallery' | 'book-design-gallery' | 'social-media-gallery' | 'contact') => void;
 }
 
 export default function CreativeDesignGalleryPage({ onNavigateToPage }: Props) {

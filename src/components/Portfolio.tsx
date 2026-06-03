@@ -14,7 +14,11 @@ export default function Portfolio() {
   const [filter, setFilter] = useState<'All' | 'Branding' | 'Digital Creative' | 'Creative Design' | 'Book Designs' | 'Social Media Designs'>('All');
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
 
-  const categories = ['All', 'Creative Design', 'Book Designs', 'Social Media Designs'] as const;
+  const categories = ['All', 'Branding', 'Digital Creative', 'Creative Design', 'Book Designs', 'Social Media Designs'] as const;
+
+  const filteredProjects = filter === 'All'
+    ? PROJECTS
+    : PROJECTS.filter(p => p.category === filter);
 
   return (
     <section id="portfolio" className="relative py-24 md:py-32 bg-gray-50 dark:bg-black/30 border-t border-royal-gold/10 overflow-hidden">
@@ -51,7 +55,70 @@ export default function Portfolio() {
 
         {/* Project List / Grid representation with Grayscale & Tilt animation logic */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
+          {filteredProjects.map((project) => (
+            <motion.div
+              key={project.id}
+              layout
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, scale: 0.95 }}
+              transition={{ duration: 0.6 }}
+              className="group flex flex-col space-y-6"
+              id={`portfolio-item-${project.id}`}
+            >
+              <div
+                onClick={() => setSelectedProject(project)}
+                className="relative aspect-[16/10] rounded-2xl overflow-hidden shadow-xl border border-royal-gold/15 bg-gray-200 dark:bg-white/5 cursor-pointer"
+              >
+                {/* Image element with premium black-white to full-color toggle upon action */}
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  referrerPolicy="no-referrer"
+                  className="w-full h-full object-cover transition-all duration-700 filter grayscale group-hover:grayscale-0 group-hover:scale-105"
+                />
 
+                {/* Floating category banner and overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                  <span className="text-white text-xs tracking-wider font-semibold bg-royal-gold/90 px-3 py-1.5 rounded-full">
+                    Explore Modern Case Study
+                  </span>
+                </div>
+
+                <div className="absolute top-4 right-4 bg-midnight-royal/90 text-royal-gold border border-royal-gold/40 p-2.5 rounded-full opacity-90 group-hover:opacity-100 transition-opacity">
+                  <ArrowUpRight className="w-5 h-5" />
+                </div>
+              </div>
+
+              {/* Text Narrative block for Project */}
+              <div className="flex flex-col space-y-3 text-left">
+                <div className="flex items-center gap-3">
+                  <span className="text-[10px] uppercase font-bold text-royal-gold tracking-widest bg-royal-gold/10 px-2.5 py-1 rounded-full border border-royal-gold/10">
+                    {project.category}
+                  </span>
+                  <span className="text-xs text-gray-400 dark:text-gray-500 font-mono">
+                    Year: {project.year}
+                  </span>
+                </div>
+
+                <h3 className="font-display text-2xl font-bold text-gray-900 dark:text-gilded-ivory group-hover:text-royal-gold transition-colors">
+                  {project.title}
+                </h3>
+
+                <p className="font-sans text-sm text-gray-600 dark:text-gray-400 leading-relaxed max-w-xl">
+                  {project.description}
+                </p>
+
+                <button
+                  onClick={() => setSelectedProject(project)}
+                  className="inline-flex items-center gap-2 text-royal-gold hover:text-royal-gold/80 font-bold text-xs uppercase tracking-widest mt-2 cursor-pointer pt-1 self-start group/btn"
+                >
+                  View Case Study
+                  <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1.5 transition-transform" />
+                </button>
+              </div>
+            </motion.div>
+          ))}
 
           {(filter === 'All' || filter === 'Creative Design') && CREATIVE_DESIGN_IMAGES.slice(0, 4).map((img, idx) => {
             const proj = createProjectFromGalleryImage(img, idx);
