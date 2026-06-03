@@ -6,6 +6,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { motion } from 'motion/react';
 import { Crown, ArrowRight, ArrowDown } from 'lucide-react';
+import crownShieldImg from '../assets/images/regenerated_image_1780485140000.png';
 
 interface HeroProps {
   onScrollToSection: (sectionId: string) => void;
@@ -113,7 +114,7 @@ export default function Hero({ onScrollToSection, onOpenPlanner }: HeroProps) {
             {/* Styled inner orb containment container */}
             <div className="absolute inset-[8px] rounded-full bg-zinc-100/60 dark:bg-zinc-900/70 border border-royal-gold/15 flex items-center justify-center overflow-hidden shadow-inner">
               <img
-                src="/src/assets/images/regenerated_image_1780485140000.png"
+                src={crownShieldImg}
                 alt="Rayoba Royal Crown Shield"
                 referrerPolicy="no-referrer"
                 className="w-24 h-24 sm:w-30 sm:h-30 object-contain drop-shadow-xl select-none group-hover:scale-110 transition-transform duration-500"
