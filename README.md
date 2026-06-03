@@ -1,19 +1,59 @@
 <div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+  <img src="https://rayoba.netlify.app/favicon.png" alt="Rayoba Media Crown Shield" width="120" height="120" />
+  <h1>Rayoba Media</h1>
+  <p><strong>Creative Direction & Brand Strategy</strong></p>
+  <p><em>Strategy and creative direction for brands that refuse to be ignored.</em></p>
 </div>
 
-# Run and deploy your AI Studio app
+---
 
-This contains everything you need to run your app locally.
-https://ai.studio/apps/d893455e-b7d6-4784-bf9a-bffcf8e3ca33
+## 👑 About Rayoba Media
 
-## Run Locally
+**Rayoba Media** is an elite creative agency specializing in visual identities that command respect and digital experiences that resonate with authority. We bridge the gap between premium design aesthetics and uncompromising strategy.
 
-**Prerequisites:**  Node.js
+Our focus areas include:
+- **Corporate Identity & Branding:** Establishing powerful, sovereign market presence.
+- **Digital Creative:** High-fidelity, headless digital experiences and WebGL interfaces.
+- **Editorial & Book Design:** Precision grids and premium typographical structuring.
+- **Cinematography & Motion:** Sovereign momentum and dynamic storytelling.
 
+## 🚀 Live Site
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+**Experience the portfolio live:** [rayoba.netlify.app](https://rayoba.netlify.app/)
+
+## 💻 Tech Stack
+
+This project is built using modern, lightning-fast web technologies to ensure optimal performance and SEO ranking:
+
+- **Framework:** React 19 (via Vite)
+- **Styling:** Tailwind CSS + Vanilla CSS enhancements
+- **Animation:** Framer Motion (Motion for React)
+- **Icons:** Lucide React
+- **Deployment:** Netlify
+
+## ⚙️ Local Development
+
+To run this project locally:
+
+1. **Clone the repository** (or download the source).
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+3. **Start the development server:**
+   ```bash
+   npm run dev
+   ```
+4. **Build for production:**
+   ```bash
+   npm run build
+   ```
+
+## 📈 SEO & Performance
+
+The site has been highly optimized with premium meta tags, Open Graph (Facebook), and Twitter Card integrations to ensure it ranks flawlessly on search engines and displays beautifully across all social media platforms.
+
+---
+<div align="center">
+  <p>© 2026 Rayoba Media. All Rights Reserved.</p>
+</div>
