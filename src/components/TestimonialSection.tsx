@@ -5,7 +5,7 @@ import { useState, useEffect } from 'react';
 const TESTIMONIALS = [
   {
     id: 1,
-    quote: "Rayoba Media did not just redesign our assets; they restructured our marketplace value. We went from chasing $500 sponsors to booking $10k retainer opportunities within 60 days.",
+    quote: "Rayoba Creatives did not just redesign our assets; they restructured our marketplace value. We went from chasing $500 sponsors to booking $10k retainer opportunities within 60 days.",
     name: "Sienna Sterling",
     role: "Co-founder, Sterling Academy",
     avatar: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=200&auto=format&fit=crop"
@@ -157,3 +157,4 @@ export default function TestimonialSection() {
     </section>
   );
 }
+

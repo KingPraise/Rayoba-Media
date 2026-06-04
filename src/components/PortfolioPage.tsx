@@ -492,7 +492,7 @@ export default function PortfolioPage({ onNavigateToPage }: Props) {
                     category: 'Strategy',
                     tag: 'STRUCTURE ARCHIVE',
                     description: 'Redefining corporate identity through architectural design thinking and premium visual strategy.',
-                    longDescription: 'Collaborating with avant-garde architects, Rayoba Media delivered a modular branding foundation representing physical stability and technical scale. We designed high-contrast grid lines, bespoke serif layout components, and custom printed stationary that project undeniable quiet authority.',
+                    longDescription: 'Collaborating with avant-garde architects, Rayoba Creatives delivered a modular branding foundation representing physical stability and technical scale. We designed high-contrast grid lines, bespoke serif layout components, and custom printed stationary that project undeniable quiet authority.',
                     image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCQ_QqKzTLCBAK8iZ4HLEzu7SbcMVQkkEdnuN9QuFsbbtOLpXuYCC7cZaBm0MOx8bTPSqGGorgkIcTWARdwv3ACtGqEUV2fGSeWWc5vWNzHGrWRUdnjIY0Qo80ZuIY-I7CcUC6w_IZyrNkGSq2C66muevDoZk2zE7uuy_VeWcks8bK_jmXaaG5WBtW_gSnUheTPORbY89lej8aHC5FqY_6czdVcBR8av_Ha3HVPak0xU7hsUl888ZKwxGR5Bzt_zMbC5JXWvh4qs8E',
                     deliverables: ['Custom Grid Alignment Framework', 'Textured Paper stationary Curation', 'Spatial Interactive Showrooms'],
                     objectives: ['Command immediate corporate trust.', 'Represent longevity and solid structure visually.'],
@@ -565,7 +565,7 @@ export default function PortfolioPage({ onNavigateToPage }: Props) {
                     category: 'Strategy',
                     tag: 'SECURITY ARCHIVE',
                     description: 'Protecting the integrity of brands through iron-clad security and high-fidelity design.',
-                    longDescription: ' Commissioned by an international security cooperative, this flagship deployment integrates highly audited code stacks with sleek WebGL interaction overlays. Rayoba Media curated a dark obsidian design scheme paired with custom golden particles tracking interactive paths.',
+                    longDescription: ' Commissioned by an international security cooperative, this flagship deployment integrates highly audited code stacks with sleek WebGL interaction overlays. Rayoba Creatives curated a dark obsidian design scheme paired with custom golden particles tracking interactive paths.',
                     image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCxX5sgoc8aqZ9MqdDkEZHM1ZwUg_IfA40q-JaU_2ZRfEa9FRsjebccJ5ygbIUVCNVnZkx7E479239q9uuT_2mL1x27BfKae5YDcNPJHlYMPYdbIjTBctTAF2l5MgS-j56EPcYu6cZwu8yMIfL_6DtLGEk90RCihl4P9_ncD4F1J8V8_ObMZVSwWyPD3GBLU8d1IIpi4M6DkeqSp3bdIQsUB33USBCB3TOeauAiY1ATL11SFLq5gu48Ze4I1TowREtpM4eLxSDFGqg',
                     deliverables: ['Headless React Security Layer', 'WebGL Particle Animation Engine', 'Client Access Encryption Keys'],
                     objectives: ['Defend asset parameters from brand dilution.', 'Build an elite virtual fortress containing zero latency.'],
@@ -781,3 +781,4 @@ export default function PortfolioPage({ onNavigateToPage }: Props) {
     </div>
   );
 }
+

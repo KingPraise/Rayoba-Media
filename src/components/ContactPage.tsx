@@ -92,7 +92,7 @@ export default function ContactPage() {
           </div>
           <div className="w-full md:w-1/2 relative h-[300px] md:h-[350px] rounded-3xl overflow-hidden shadow-2xl group border border-royal-gold/10">
             <img 
-              alt="Rayoba Media Studio Office" 
+              alt="Rayoba Creatives Studio Office" 
               className="w-full h-full object-cover grayscale-[0.3] group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700" 
               src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJsOZYuQtwBX85gPMViaf-iYPBUlbcGXpRr36q-bVBcQU3VR2CHdNVOn4CEX1vJsf8KG4W2r6Uua9caRAixwTGshq-7cpTw17tZWaOW-84M8YOsQo_C-RpHABaLbIZ7dwHSdgr65mFd5Hat0FpkeNMoRtNT8GOMY784X6SqWgvx5jGDF-l2dY7FOjMjhBqSiO-UM7uYE0S8Q6uW2ZDQxbQ7b0IIdCBP3TijjRlDxUf1zzKWlyM7AHzgndAdNLvDTfmQSY5uk00q1I"
               referrerPolicy="no-referrer"
@@ -390,3 +390,4 @@ export default function ContactPage() {
     </div>
   );
 }
+

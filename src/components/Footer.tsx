@@ -161,7 +161,7 @@ export default function Footer({ onScrollToSection }: FooterProps) {
           </div>
           
           <div className="flex flex-col md:flex-row justify-between items-center w-full text-xs font-sans text-gray-500 pt-8 gap-4">
-            <p>© {new Date().getFullYear()} Rayoba Media. Sovereign Digital Systems.</p>
+            <p>© {new Date().getFullYear()} Rayoba Creatives. Sovereign Digital Systems.</p>
             <p className="flex items-center">
               Crafted with <span className="text-royal-gold px-1.5 font-mono">absolute</span> conviction.
             </p>
@@ -172,3 +172,4 @@ export default function Footer({ onScrollToSection }: FooterProps) {
     </footer>
   );
 }
+

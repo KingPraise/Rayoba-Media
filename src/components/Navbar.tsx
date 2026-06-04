@@ -89,7 +89,7 @@ export default function Navbar({ activePage, onNavigateToPage, onOpenPlanner }: 
             id="brand-logo"
           >
             <Crown className="w-6 h-6 stroke-[1.5] text-royal-gold" />
-            <span className="font-display tracking-tight text-royal-gold">Rayoba Media</span>
+            <span className="font-display tracking-tight text-royal-gold">Rayoba Creatives</span>
           </button>
 
           {/* Desktop Navigation */}
@@ -197,3 +197,4 @@ export default function Navbar({ activePage, onNavigateToPage, onOpenPlanner }: 
     </>
   );
 }
+

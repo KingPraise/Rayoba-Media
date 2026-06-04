@@ -43,7 +43,7 @@ export default function OriginStory() {
               <div className="relative z-10 w-full h-full flex items-center justify-center p-4">
                 <img
                   src={logoUrl}
-                  alt="Rayoba Media Royal Sovereign Seal"
+                  alt="Rayoba Creatives Royal Sovereign Seal"
                   referrerPolicy="no-referrer"
                   className="max-h-[220px] md:max-h-[260px] object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-500"
                   id="origin-logo-img"
@@ -89,7 +89,7 @@ export default function OriginStory() {
                 >
                   Oba (King in Yoruba)
                 </button>
-                , Rayoba Media represents the divine clarity and sovereign authority every brand deserves.
+                , Rayoba Creatives represents the divine clarity and sovereign authority every brand deserves.
               </p>
 
               <p>
@@ -154,3 +154,4 @@ export default function OriginStory() {
     </section>
   );
 }
+

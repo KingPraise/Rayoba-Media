@@ -79,7 +79,7 @@ export const PROJECTS: Project[] = [
     category: 'Branding',
     tag: 'FEATURED WORK',
     description: "A complete visual overhaul for a global venture firm, centering on the concept of 'Enlightened Capital'.",
-    longDescription: 'Enlightened Capital was built on backing avant-garde technologies and royal tier projects. Rayoba Media developed a modular, light-based visual signature starting from a physical hand-sketched seal and leading to a pixel-perfect, responsive virtual command center. We paired high-end serif layouts with minimalist typography to deliver immediate executive comfort.',
+    longDescription: 'Enlightened Capital was built on backing avant-garde technologies and royal tier projects. Rayoba Creatives developed a modular, light-based visual signature starting from a physical hand-sketched seal and leading to a pixel-perfect, responsive virtual command center. We paired high-end serif layouts with minimalist typography to deliver immediate executive comfort.',
     image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCkpnLo-Xra-g-7gTy1-cHIkSW82WJfZigrz1hsg34iqjH4xpm_Wk6aIJYC_16j55HLVuqheN5zEjzqvF3F_T1n2Q5k9U8LkFgn9smpVLKPClW-JcCRWEX_Z48ncPE1ZFj0EXW5Skqobp5FiXQNJfb26qF2fad2Ap9CUiZnfw3Q7qJg8kggb_tSGCUNnF_EISRJaZ8COQnGai2w2jsUVoZ-HygxhAI31_qpTien1MUaawTMmXm8JaEXviZ1cKKv3HXb8RVOYU3sFuQ',
     deliverables: [
       'Complete Visual Identity Guidelines',
@@ -180,7 +180,7 @@ export const PROJECTS: Project[] = [
     category: 'Branding',
     tag: 'LEGACY ARCHIVE',
     description: 'A visual legacy built for a new era of digital luxury.',
-    longDescription: 'Aetherial Identity represents high heraldic mastery designed for high-end digital luxury. Rayoba Media curated custom typography grids, gold leaf packaging templates, and responsive online flagships that present immediate, commanding trust.',
+    longDescription: 'Aetherial Identity represents high heraldic mastery designed for high-end digital luxury. Rayoba Creatives curated custom typography grids, gold leaf packaging templates, and responsive online flagships that present immediate, commanding trust.',
     image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuADs_6AxKDzxRA6shopxxF4RRAvQfVRvbJLDkphLtAqFkZ8JVTN5RYNsqpgtZVhjuUaKTBrodQ8ZD_t05NvVGibb9yuIcARCYE0ddGYC4aXvceu9iSSWxQCYvsh2-2eNjNqgwYSTmunUic_6duHY9VSNLnddKUvBNCn6hOYehZ7uSTCIFMbPn--Jf4uhs3WFf8ukuHiWSyd5k-VMx1vE2HoznhK5pXEqWfUQP45J_a3ItfeTZxUKIepT2M-RQEiywffvDN6hxXmUPU',
     deliverables: [
       'Gold Leaf Stationery Blueprint',
@@ -352,3 +352,4 @@ export function createProjectFromSocialImage(img: import('./types').GalleryImage
     ]
   };
 }
+

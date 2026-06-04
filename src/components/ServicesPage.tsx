@@ -883,7 +883,7 @@ export default function ServicesPage({ onNavigateToContact }: ServicesPageProps)
               Ready to weaponize your brand?
             </h2>
             <p className="font-sans text-xs md:text-sm text-gray-300 leading-relaxed max-w-xl mx-auto">
-              Join the ranks of elite digital leaders and visionary enterprises powered in absolute authority by Rayoba Media.
+              Join the ranks of elite digital leaders and visionary enterprises powered in absolute authority by Rayoba Creatives.
             </p>
             <div className="pt-4">
               <button 
@@ -900,3 +900,4 @@ export default function ServicesPage({ onNavigateToContact }: ServicesPageProps)
     </div>
   );
 }
+

@@ -1,15 +1,15 @@
 <div align="center">
-  <img src="https://rayoba.netlify.app/favicon.png" alt="Rayoba Media Crown Shield" width="120" height="120" />
-  <h1>Rayoba Media</h1>
+  <img src="https://rayoba.netlify.app/favicon.png" alt="Rayoba Creatives Crown Shield" width="120" height="120" />
+  <h1>Rayoba Creatives</h1>
   <p><strong>Creative Direction & Brand Strategy</strong></p>
   <p><em>Strategy and creative direction for brands that refuse to be ignored.</em></p>
 </div>
 
 ---
 
-## 👑 About Rayoba Media
+## 👑 About Rayoba Creatives
 
-**Rayoba Media** is an elite creative agency specializing in visual identities that command respect and digital experiences that resonate with authority. We bridge the gap between premium design aesthetics and uncompromising strategy.
+**Rayoba Creatives** is an elite creative agency specializing in visual identities that command respect and digital experiences that resonate with authority. We bridge the gap between premium design aesthetics and uncompromising strategy.
 
 Our focus areas include:
 - **Corporate Identity & Branding:** Establishing powerful, sovereign market presence.
@@ -55,5 +55,5 @@ The site has been highly optimized with premium meta tags, Open Graph (Facebook)
 
 ---
 <div align="center">
-  <p>© 2026 Rayoba Media. All Rights Reserved.</p>
+  <p>© 2026 Rayoba Creatives. All Rights Reserved.</p>
 </div>

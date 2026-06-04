@@ -75,7 +75,7 @@ export default function AboutPage() {
           An Editorial Quest for Cinematic Authority and Brand Dominion
         </h1>
         <p className="font-sans text-base md:text-lg text-gray-600 dark:text-gray-300 max-w-2xl leading-relaxed">
-          Rayoba Media stands as a boutique sanctuary for brands that demand elite, uncompromised presence. We do not design options; we curate solutions for commercial excellence and historical stature.
+          Rayoba Creatives stands as a boutique sanctuary for brands that demand elite, uncompromised presence. We do not design options; we curate solutions for commercial excellence and historical stature.
         </p>
       </motion.section>
 
@@ -111,7 +111,7 @@ export default function AboutPage() {
                 <div className="relative z-10 w-full h-full flex items-center justify-center p-4">
                   <img
                     src={logoUrl}
-                    alt="Rayoba Media Royal Sovereign Seal"
+                    alt="Rayoba Creatives Royal Sovereign Seal"
                     referrerPolicy="no-referrer"
                     className="max-h-[220px] md:max-h-[260px] object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-500"
                     id="origin-logo-img"
@@ -157,7 +157,7 @@ export default function AboutPage() {
                   >
                     Oba (King in Yoruba)
                   </button>
-                  , Rayoba Media represents the divine clarity and sovereign authority every brand deserves.
+                  , Rayoba Creatives represents the divine clarity and sovereign authority every brand deserves.
                 </p>
 
                 <p>
@@ -561,3 +561,4 @@ export default function AboutPage() {
     </div>
   );
 }
+
