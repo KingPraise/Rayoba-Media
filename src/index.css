@@ -4,11 +4,13 @@
 @variant dark (&:where(.dark, .dark *));
 
 :root {
-  --royal-gold-color: #2E1065; /* In light mode, yellow gold text/elements become deep purple */
+  --royal-gold-color: #D4AF37; /* In light mode or dark mode, outlines and borders stay gold */
+  --royal-purple-color: #6B21A8; /* Deep rich purple for light mode text */
 }
 
 html.dark {
-  --royal-gold-color: #D4AF37; /* In dark mode, it remains luxurious yellow gold */
+  --royal-gold-color: #D4AF37; /* Dark mode: borders and outlines stay luxurious yellow gold */
+  --royal-purple-color: #C084FC; /* Dark mode: luminous light purple for text accents */
 }
 
 /* Cascade gold accent down in dark containers to maintain premium styling and clear contrast in light mode */
@@ -22,6 +24,7 @@ html.dark {
 #contact-footer,
 .dark-container {
   --royal-gold-color: #D4AF37 !important;
+  --royal-purple-color: #C084FC !important;
 }
 
 @theme {
@@ -29,6 +32,7 @@ html.dark {
   --font-sans: "Plus Jakarta Sans", sans-serif;
   
   --color-royal-gold: var(--royal-gold-color);
+  --color-royal-purple: var(--royal-purple-color);
   --color-gilded-ivory: #FDFBF7;
   --color-midnight-royal: #0A0A0B;
   --color-deep-violet: #2E1065;

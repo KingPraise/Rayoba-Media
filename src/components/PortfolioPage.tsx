@@ -59,6 +59,7 @@ export default function PortfolioPage({ onNavigateToPage }: Props) {
   const [activeCategory, setActiveCategory] = useState<string>('All');
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
   const [activeReel, setActiveReel] = useState<MotionReel | null>(null);
+  const [lightboxImage, setLightboxImage] = useState<string | null>(null);
 
   const categories = ['All', 'Branding', 'Digital Creative', 'Creative Design', 'Book Designs', 'Social Media Designs', 'Editorial', 'Cinematography', 'Strategy'];
 
@@ -178,13 +179,6 @@ export default function PortfolioPage({ onNavigateToPage }: Props) {
                         className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-midnight-royal/60 via-transparent to-transparent opacity-85 group-hover:opacity-70 transition-opacity" />
-
-                      {/* Absolute positioning tags */}
-                      <div className="absolute top-4 left-4 flex gap-2">
-                        <span className="font-sans text-[9px] font-bold tracking-widest uppercase bg-midnight-royal text-royal-gold px-3 py-1.5 rounded-full border border-royal-gold/25 shadow-lg">
-                          {proj.tag}
-                        </span>
-                      </div>
                     </div>
 
                     {/* Info block */}
@@ -220,7 +214,7 @@ export default function PortfolioPage({ onNavigateToPage }: Props) {
 
             {(activeCategory === 'All' || activeCategory === 'Creative Design') && (
               <>
-                {CREATIVE_DESIGN_IMAGES.slice(0, 5).map((img, idx) => {
+                  {CREATIVE_DESIGN_IMAGES.slice(0, 5).map((img, idx) => {
                   const proj = createProjectFromGalleryImage(img, idx);
                   return (
                     <motion.div
@@ -230,50 +224,22 @@ export default function PortfolioPage({ onNavigateToPage }: Props) {
                       animate={{ opacity: 1, y: 0 }}
                       exit={{ opacity: 0, scale: 0.95 }}
                       transition={{ duration: 0.5 }}
-                      className="group relative rounded-[28px] border border-royal-gold/15 bg-white/60 dark:bg-zinc-950/20 shadow-2xl overflow-hidden cursor-pointer text-left flex flex-col justify-between"
-                      onClick={() => setSelectedProject(proj)}
+                      className="group relative rounded-[28px] border border-royal-gold/15 bg-white/60 dark:bg-zinc-950/20 shadow-2xl overflow-hidden cursor-pointer"
+                      onClick={() => setLightboxImage(proj.image)}
                     >
-                      <div className="relative aspect-video w-full overflow-hidden select-none shrink-0">
+                      <div className="relative aspect-video w-full overflow-hidden select-none">
                         <img
                           src={proj.image}
                           alt={proj.title}
                           referrerPolicy="no-referrer"
                           className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
                         />
-                        <div className="absolute inset-0 bg-gradient-to-t from-midnight-royal/60 via-transparent to-transparent opacity-85 group-hover:opacity-70 transition-opacity" />
-
-                        <div className="absolute top-4 left-4 flex gap-2">
-                          <span className="font-sans text-[9px] font-bold tracking-widest uppercase bg-midnight-royal text-royal-gold px-3 py-1.5 rounded-full border border-royal-gold/25 shadow-lg">
-                            {proj.tag}
-                          </span>
-                        </div>
-                      </div>
-
-                      {/* Info block */}
-                      <div className="p-8 space-y-4 flex-grow flex flex-col justify-between">
-                        <div>
-                          <div className="flex justify-between items-start gap-3">
-                            <div>
-                              <span className="font-sans text-[10px] text-royal-gold font-bold uppercase tracking-wider block">
-                                {proj.category}
-                              </span>
-                              <h3 className="font-display text-2xl font-black text-gray-950 dark:text-gilded-ivory mt-1 group-hover:text-royal-gold transition-colors">
-                                {proj.title}
-                              </h3>
-                            </div>
-                            <div className="p-2.5 bg-royal-gold/10 rounded-full text-royal-gold group-hover:bg-royal-gold group-hover:text-deep-violet transition-colors duration-300 shrink-0">
-                              <ArrowUpRight className="w-4 h-4" />
-                            </div>
+                        <div className="absolute inset-0 bg-gradient-to-t from-midnight-royal/40 via-transparent to-transparent opacity-60 group-hover:opacity-30 transition-opacity" />
+                        {/* Hover zoom hint */}
+                        <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                          <div className="bg-midnight-royal/70 backdrop-blur-sm text-royal-gold text-[10px] font-bold uppercase tracking-widest px-4 py-2 rounded-full border border-royal-gold/30">
+                            View Full Size
                           </div>
-
-                          <p className="font-sans text-xs md:text-sm text-gray-600 dark:text-gray-400 leading-relaxed line-clamp-2 mt-4">
-                            {proj.description}
-                          </p>
-                        </div>
-
-                        <div className="flex justify-between items-center text-[10px] font-sans text-gray-400 pt-5 border-t border-royal-gold/10 mt-auto">
-                          <span className="font-semibold text-royal-gold/80 uppercase tracking-wider">Client: {proj.client}</span>
-                          <span>Year: {proj.year}</span>
                         </div>
                       </div>
                     </motion.div>
@@ -308,50 +274,21 @@ export default function PortfolioPage({ onNavigateToPage }: Props) {
                       animate={{ opacity: 1, y: 0 }}
                       exit={{ opacity: 0, scale: 0.95 }}
                       transition={{ duration: 0.5 }}
-                      className="group relative rounded-[28px] border border-royal-gold/15 bg-white/60 dark:bg-zinc-950/20 shadow-2xl overflow-hidden cursor-pointer text-left flex flex-col justify-between"
-                      onClick={() => setSelectedProject(proj)}
+                      className="group relative rounded-[28px] border border-royal-gold/15 bg-white/60 dark:bg-zinc-950/20 shadow-2xl overflow-hidden cursor-pointer"
+                      onClick={() => setLightboxImage(proj.image)}
                     >
-                      <div className="relative aspect-video w-full overflow-hidden select-none shrink-0">
+                      <div className="relative aspect-video w-full overflow-hidden select-none">
                         <img
                           src={proj.image}
                           alt={proj.title}
                           referrerPolicy="no-referrer"
                           className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
                         />
-                        <div className="absolute inset-0 bg-gradient-to-t from-midnight-royal/60 via-transparent to-transparent opacity-85 group-hover:opacity-70 transition-opacity" />
-
-                        <div className="absolute top-4 left-4 flex gap-2">
-                          <span className="font-sans text-[9px] font-bold tracking-widest uppercase bg-midnight-royal text-royal-gold px-3 py-1.5 rounded-full border border-royal-gold/25 shadow-lg">
-                            {proj.tag}
-                          </span>
-                        </div>
-                      </div>
-
-                      {/* Info block */}
-                      <div className="p-8 space-y-4 flex-grow flex flex-col justify-between">
-                        <div>
-                          <div className="flex justify-between items-start gap-3">
-                            <div>
-                              <span className="font-sans text-[10px] text-royal-gold font-bold uppercase tracking-wider block">
-                                {proj.category}
-                              </span>
-                              <h3 className="font-display text-2xl font-black text-gray-950 dark:text-gilded-ivory mt-1 group-hover:text-royal-gold transition-colors">
-                                {proj.title}
-                              </h3>
-                            </div>
-                            <div className="p-2.5 bg-royal-gold/10 rounded-full text-royal-gold group-hover:bg-royal-gold group-hover:text-deep-violet transition-colors duration-300 shrink-0">
-                              <ArrowUpRight className="w-4 h-4" />
-                            </div>
+                        <div className="absolute inset-0 bg-gradient-to-t from-midnight-royal/40 via-transparent to-transparent opacity-60 group-hover:opacity-30 transition-opacity" />
+                        <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                          <div className="bg-midnight-royal/70 backdrop-blur-sm text-royal-gold text-[10px] font-bold uppercase tracking-widest px-4 py-2 rounded-full border border-royal-gold/30">
+                            View Full Size
                           </div>
-
-                          <p className="font-sans text-xs md:text-sm text-gray-600 dark:text-gray-400 leading-relaxed line-clamp-2 mt-4">
-                            {proj.description}
-                          </p>
-                        </div>
-
-                        <div className="flex justify-between items-center text-[10px] font-sans text-gray-400 pt-5 border-t border-royal-gold/10 mt-auto">
-                          <span className="font-semibold text-royal-gold/80 uppercase tracking-wider">Client: {proj.client}</span>
-                          <span>Year: {proj.year}</span>
                         </div>
                       </div>
                     </motion.div>
@@ -386,50 +323,21 @@ export default function PortfolioPage({ onNavigateToPage }: Props) {
                       animate={{ opacity: 1, y: 0 }}
                       exit={{ opacity: 0, scale: 0.95 }}
                       transition={{ duration: 0.5 }}
-                      className="group relative rounded-[28px] border border-royal-gold/15 bg-white/60 dark:bg-zinc-950/20 shadow-2xl overflow-hidden cursor-pointer text-left flex flex-col justify-between"
-                      onClick={() => setSelectedProject(proj)}
+                      className="group relative rounded-[28px] border border-royal-gold/15 bg-white/60 dark:bg-zinc-950/20 shadow-2xl overflow-hidden cursor-pointer"
+                      onClick={() => setLightboxImage(proj.image)}
                     >
-                      <div className="relative aspect-video w-full overflow-hidden select-none shrink-0">
+                      <div className="relative aspect-video w-full overflow-hidden select-none">
                         <img
                           src={proj.image}
                           alt={proj.title}
                           referrerPolicy="no-referrer"
                           className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
                         />
-                        <div className="absolute inset-0 bg-gradient-to-t from-midnight-royal/60 via-transparent to-transparent opacity-85 group-hover:opacity-70 transition-opacity" />
-
-                        <div className="absolute top-4 left-4 flex gap-2">
-                          <span className="font-sans text-[9px] font-bold tracking-widest uppercase bg-midnight-royal text-royal-gold px-3 py-1.5 rounded-full border border-royal-gold/25 shadow-lg">
-                            {proj.tag}
-                          </span>
-                        </div>
-                      </div>
-
-                      {/* Info block */}
-                      <div className="p-8 space-y-4 flex-grow flex flex-col justify-between">
-                        <div>
-                          <div className="flex justify-between items-start gap-3">
-                            <div>
-                              <span className="font-sans text-[10px] text-royal-gold font-bold uppercase tracking-wider block">
-                                {proj.category}
-                              </span>
-                              <h3 className="font-display text-2xl font-black text-gray-950 dark:text-gilded-ivory mt-1 group-hover:text-royal-gold transition-colors">
-                                {proj.title}
-                              </h3>
-                            </div>
-                            <div className="p-2.5 bg-royal-gold/10 rounded-full text-royal-gold group-hover:bg-royal-gold group-hover:text-deep-violet transition-colors duration-300 shrink-0">
-                              <ArrowUpRight className="w-4 h-4" />
-                            </div>
+                        <div className="absolute inset-0 bg-gradient-to-t from-midnight-royal/40 via-transparent to-transparent opacity-60 group-hover:opacity-30 transition-opacity" />
+                        <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                          <div className="bg-midnight-royal/70 backdrop-blur-sm text-royal-gold text-[10px] font-bold uppercase tracking-widest px-4 py-2 rounded-full border border-royal-gold/30">
+                            View Full Size
                           </div>
-
-                          <p className="font-sans text-xs md:text-sm text-gray-600 dark:text-gray-400 leading-relaxed line-clamp-2 mt-4">
-                            {proj.description}
-                          </p>
-                        </div>
-
-                        <div className="flex justify-between items-center text-[10px] font-sans text-gray-400 pt-5 border-t border-royal-gold/10 mt-auto">
-                          <span className="font-semibold text-royal-gold/80 uppercase tracking-wider">Client: {proj.client}</span>
-                          <span>Year: {proj.year}</span>
                         </div>
                       </div>
                     </motion.div>
@@ -773,6 +681,44 @@ export default function PortfolioPage({ onNavigateToPage }: Props) {
                 </div>
               </div>
 
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
+      {/* Lightbox Overlay for gallery images */}
+      <AnimatePresence>
+        {lightboxImage && (
+          <motion.div
+            key="lightbox"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.25 }}
+            className="fixed inset-0 z-[200] bg-black/92 backdrop-blur-md flex items-center justify-center p-4 md:p-8"
+            onClick={() => setLightboxImage(null)}
+          >
+            <motion.div
+              initial={{ scale: 0.93, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.93, opacity: 0 }}
+              transition={{ duration: 0.25 }}
+              className="relative max-w-5xl w-full max-h-[90vh] rounded-2xl overflow-hidden shadow-2xl border border-royal-gold/20"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <img
+                src={lightboxImage}
+                alt="Gallery full view"
+                referrerPolicy="no-referrer"
+                className="w-full h-full object-contain max-h-[85vh]"
+              />
+              <button
+                onClick={() => setLightboxImage(null)}
+                className="absolute top-4 right-4 p-2 rounded-full bg-midnight-royal/80 text-royal-gold border border-royal-gold/30 hover:bg-royal-gold hover:text-deep-violet transition-all backdrop-blur-sm"
+                aria-label="Close"
+              >
+                <X className="w-5 h-5" />
+              </button>
             </motion.div>
           </motion.div>
         )}

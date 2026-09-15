@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { SERVICES } from '../data';
 import { 
@@ -72,6 +72,19 @@ export default function ServicesPage({ onNavigateToContact }: ServicesPageProps)
   const [selectedEstimatorIds, setSelectedEstimatorIds] = useState<string[]>(['logo-crest', 'react-showroom']);
   const [tiltElements, setTiltElements] = useState<Record<string, { rotateX: number; rotateY: number }>>({});
   const [ripples, setRipples] = useState<Array<{ id: string; cardId: string; x: number; y: number; size: number }>>([]);
+
+  // Deep-scroll to a specific service section if coming from a home card click
+  useEffect(() => {
+    const target = sessionStorage.getItem('scrollToService');
+    if (target) {
+      sessionStorage.removeItem('scrollToService');
+      // Small delay to let the page render before scrolling
+      setTimeout(() => {
+        const el = document.getElementById(target);
+        if (el) el.scrollIntoView({ behavior: 'smooth' });
+      }, 350);
+    }
+  }, []);
 
   // Tactile ripple click handler
   const handleCardClick = (cardId: string, e: React.MouseEvent<HTMLDivElement>) => {
@@ -238,11 +251,12 @@ export default function ServicesPage({ onNavigateToContact }: ServicesPageProps)
 
       {/* 2. Graphic Design & Branding (Identity & Visual Strategy) */}
       <motion.section 
+        id="service-graphic-design"
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-150px" }}
         transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
-        className="py-28 px-6 md:px-12 bg-gray-100/30 dark:bg-midnight-royal/40 border-y border-royal-gold/10"
+        className="py-28 px-6 md:px-12 bg-gray-100/30 dark:bg-midnight-royal/40 border-y border-royal-gold/10 scroll-mt-20"
       >
         <div className="max-w-7xl mx-auto">
           
@@ -338,105 +352,14 @@ export default function ServicesPage({ onNavigateToContact }: ServicesPageProps)
         </div>
       </motion.section>
 
-      {/* 3. Web Development Section */}
-      <motion.section 
-        initial={{ opacity: 0, y: 50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, margin: "-150px" }}
-        transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
-        className="py-28 px-6 md:px-12 bg-white dark:bg-zinc-950 relative overflow-hidden text-gray-900 dark:text-gilded-ivory text-left border-b border-royal-gold/10"
-      >
-        <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-royal-gold/5 to-transparent pointer-events-none z-0" />
-        
-        <div className="max-w-7xl mx-auto relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
-            
-            {/* Left Info */}
-            <div className="lg:col-span-5 space-y-8">
-              <div className="w-16 h-0.5 bg-royal-gold" />
-              <div className="space-y-3">
-                <span className="text-royal-gold font-sans text-xs font-bold uppercase tracking-widest block">Web Development</span>
-                <h2 className="font-display text-4xl sm:text-5xl font-black leading-tight">
-                  Architectural <br/>
-                  <span className="text-royal-gold italic font-serif">Development</span>
-                </h2>
-              </div>
-              <p className="font-sans text-xs md:text-sm text-gray-500 dark:text-gray-400 leading-relaxed">
-                We build digital cathedrals. High-performance, SEO-fortified, and visually arresting web flagships engineered on elite bleeding-edge headless React stacks to yield zero visual latency.
-              </p>
-
-              {/* Modular Features List */}
-              <div className="space-y-4">
-                <div className="flex items-start gap-4 p-4 rounded-2xl bg-gray-50/50 dark:bg-white/5 border border-royal-gold/10 hover:border-royal-gold transition-colors block">
-                  <div className="p-2.5 bg-royal-gold/10 rounded-xl text-royal-gold shrink-0">
-                    <Building2 className="w-5 h-5" />
-                  </div>
-                  <div className="space-y-1">
-                    <h4 className="font-sans text-xs md:text-sm font-bold text-gray-950 dark:text-gilded-ivory">Corporate Ecosystems</h4>
-                    <p className="font-sans text-xs text-gray-500 dark:text-gray-450">Professional digital hubs and secure parameters for institutional trust.</p>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-4 p-4 rounded-2xl bg-gray-50/50 dark:bg-white/5 border border-royal-gold/10 hover:border-royal-gold transition-colors block">
-                  <div className="p-2.5 bg-royal-gold/10 rounded-xl text-royal-gold shrink-0">
-                    <ShoppingBag className="w-5 h-5 opacity-85" />
-                  </div>
-                  <div className="space-y-1">
-                    <h4 className="font-sans text-xs md:text-sm font-bold text-gray-950 dark:text-gilded-ivory">E-Commerce Luxury</h4>
-                    <p className="font-sans text-xs text-gray-500 dark:text-gray-450">Highly calibrated storefront experiences for elite premier brands.</p>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-4 p-4 rounded-2xl bg-gray-50/50 dark:bg-white/5 border border-royal-gold/10 hover:border-royal-gold transition-colors block">
-                  <div className="p-2.5 bg-royal-gold/10 rounded-xl text-royal-gold shrink-0">
-                    <Wand2 className="w-5 h-5" />
-                  </div>
-                  <div className="space-y-1">
-                    <h4 className="font-sans text-xs md:text-sm font-bold text-gray-950 dark:text-gilded-ivory">Digital Revamps</h4>
-                    <p className="font-sans text-xs text-gray-500 dark:text-gray-450">Modernizing aging operations and code bases with clean, rich editorial layouts.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Right Interactive code display */}
-            <div className="lg:col-span-7">
-              <div className="relative group select-none">
-                <div className="absolute -inset-1 bg-gradient-to-r from-royal-gold to-deep-violet rounded-[32px] blur opacity-20 group-hover:opacity-35 transition duration-1000" />
-                <div className="relative bg-[#020202] rounded-[28px] border border-royal-gold/25 overflow-hidden aspect-video shadow-2xl">
-                  <img 
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5JbWErJq9YLIC2QVFLlSF2haX99YpsNCJaSrKeGQl168qbahqm0ek989N5rorce3scTxFiuFeDyB6PSp9zdHOzc-8aJQyQAsqLXTOysBSTJyaRep08pvvNXaWVtMcyyAYMQgxlty-SWqEjML8ka0GkuAqn9cPoNMouYJWWBdrgY16yp_sXG1tSQ37_g-W9Q4ajenGr8tq5LNMfSLfh-OQibhshPFkWfhNHHI-Q4N-y8taL-RCi5li8-zN1aZHOGQbDUq2roIIE_w" 
-                    alt="Cinematic dual monitor code display" 
-                    referrerPolicy="no-referrer"
-                    className="w-full h-full object-cover opacity-50 scale-102 hover:scale-100 transition-all duration-750"
-                  />
-                  <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-                    <motion.div 
-                      animate={{ scale: [1, 1.1, 1], rotate: [0, 360] }}
-                      transition={{ 
-                        scale: { repeat: Infinity, duration: 3, ease: 'easeInOut' },
-                        rotate: { repeat: Infinity, duration: 15, ease: 'linear' }
-                      }}
-                      className="p-8 bg-zinc-950/90 border border-royal-gold text-royal-gold rounded-full shadow-2xl"
-                    >
-                      <Code className="w-8 h-8" />
-                    </motion.div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </motion.section>
-
       {/* 4. Social & Video (Content Kineticism) */}
       <motion.section 
+        id="service-social-strategy"
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-150px" }}
         transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
-        className="py-28 px-6 md:px-12 bg-gray-100/30 dark:bg-[#070708] border-b border-royal-gold/10"
+        className="py-28 px-6 md:px-12 bg-gray-100/30 dark:bg-[#070708] border-b border-royal-gold/10 scroll-mt-20"
       >
         <div className="max-w-7xl mx-auto">
           
@@ -650,11 +573,12 @@ export default function ServicesPage({ onNavigateToContact }: ServicesPageProps)
 
       {/* 5. Email Marketing */}
       <motion.section 
+        id="service-email-marketing"
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-150px" }}
         transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
-        className="py-28 px-6 md:px-12 bg-white dark:bg-zinc-950 text-gray-900 dark:text-gilded-ivory text-left border-b border-royal-gold/10"
+        className="py-28 px-6 md:px-12 bg-white dark:bg-zinc-950 text-gray-900 dark:text-gilded-ivory text-left border-b border-royal-gold/10 scroll-mt-20"
       >
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">

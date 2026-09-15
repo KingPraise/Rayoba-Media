@@ -31,11 +31,11 @@ export default function Footer({ onScrollToSection }: FooterProps) {
           </div>
           <div>
             <button
-              onClick={() => onScrollToSection('builder-section')}
+              onClick={() => onScrollToSection('contact')}
               className="group inline-flex items-center justify-center bg-royal-gold hover:bg-white text-zinc-950 font-black px-10 py-5 rounded-full shadow-2xl hover:shadow-royal-gold/20 hover:scale-105 active:scale-95 transition-all duration-300 font-sans text-sm uppercase tracking-wider gap-3 shrink-0 cursor-pointer"
             >
               <Sparkles className="w-5 h-5 text-zinc-900 group-hover:text-royal-gold transition-colors duration-300" />
-              <span>Initiate Legacy</span>
+              <span>Get Started</span>
             </button>
           </div>
         </div>
@@ -59,9 +59,19 @@ export default function Footer({ onScrollToSection }: FooterProps) {
             <p className="font-sans text-sm text-gray-400 max-w-sm leading-relaxed">
               Synthesizing light and sovereignty into uncompromised visual systems. We sculpt digital legacies for elite organizations across the globe.
             </p>
-            <div className="flex gap-4 pt-2">
+            <div className="flex flex-wrap gap-3 pt-2">
               <a href="#" className="w-10 h-10 rounded-full border border-royal-gold/20 flex items-center justify-center text-gray-400 hover:text-royal-gold hover:border-royal-gold hover:bg-royal-gold/5 transition-all duration-300" aria-label="Instagram">
                 <Instagram className="w-4 h-4" />
+              </a>
+              <a href="#" className="w-10 h-10 rounded-full border border-royal-gold/20 flex items-center justify-center text-gray-400 hover:text-royal-gold hover:border-royal-gold hover:bg-royal-gold/5 transition-all duration-300" aria-label="TikTok">
+                <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                  <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64c.298-.002.595.042.88.13V9.4a6.33 6.33 0 0 0-1-.08A6.34 6.34 0 0 0 3 15.66a6.34 6.34 0 0 0 10.86 4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-2.91-1.09 4.77 4.77 0 0 1-1.13-3.43h5v-.01z"/>
+                </svg>
+              </a>
+              <a href="#" className="w-10 h-10 rounded-full border border-royal-gold/20 flex items-center justify-center text-gray-400 hover:text-royal-gold hover:border-royal-gold hover:bg-royal-gold/5 transition-all duration-300" aria-label="Facebook">
+                <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                  <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                </svg>
               </a>
               <a href="#" className="w-10 h-10 rounded-full border border-royal-gold/20 flex items-center justify-center text-gray-400 hover:text-royal-gold hover:border-royal-gold hover:bg-royal-gold/5 transition-all duration-300" aria-label="LinkedIn">
                 <Linkedin className="w-4 h-4" />
@@ -89,13 +99,7 @@ export default function Footer({ onScrollToSection }: FooterProps) {
                 </button>
               </li>
               <li>
-                <button onClick={() => onScrollToSection('capabilities-start')} className="hover:text-white transition-colors flex items-center gap-2 group">
-                  <span className="w-1.5 h-1.5 rounded-full bg-royal-gold/0 group-hover:bg-royal-gold transition-colors"></span>
-                  Ecosystem
-                </button>
-              </li>
-              <li>
-                <button onClick={() => onScrollToSection('builder-section')} className="hover:text-white transition-colors flex items-center gap-2 group">
+                <button onClick={() => onScrollToSection('contact')} className="hover:text-white transition-colors flex items-center gap-2 group">
                   <span className="w-1.5 h-1.5 rounded-full bg-royal-gold/0 group-hover:bg-royal-gold transition-colors"></span>
                   Consulting
                 </button>

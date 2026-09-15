@@ -23,26 +23,10 @@ export const SERVICES: Service[] = [
     methodology: 'Rooted in heritage, designed for structural immortality.'
   },
   {
-    id: 'web-dev',
-    title: 'Web Development',
-    description: 'High-performance digital flagship stores and immersive web experiences.',
-    longDescription: 'We build digital showrooms that function flawlessly under extreme scale. By utilizing modern headless systems, WebGL rendering, and fluid responsive motion, we bridge high art and digital performance.',
-    icon: 'Globe',
-    badge: 'Digital Flagship',
-    deliverables: [
-      'Bespoke React-Vite Web Flagships & Native Showrooms',
-      'Fluid Micro-Animations & Responsive Spatial Interfaces',
-      'Performance Optimization & Interaction Auditing',
-      'Secure, High-Speed Editorial Content Management Systems'
-    ],
-    timeline: '6 - 10 Weeks',
-    methodology: 'Lightweight code, heavy visual impact, fluid execution.'
-  },
-  {
     id: 'social-strategy',
-    title: 'Social Strategy',
-    description: 'Curated presence that turns followers into loyal subjects.',
-    longDescription: 'Reject standard, noisy social posts. We curate high-concept campaigns, editorial grids, and sophisticated copywriting that translate your brand’s prestige directly to digital circles.',
+    title: 'Social Media',
+    description: 'Curated experiences that turn followers into devoted audiences.',
+    longDescription: 'Reject standard, noisy social posts. We curate high-concept campaigns, editorial grids, and sophisticated copywriting that translate your brand\'s prestige directly to digital circles.',
     icon: 'Share2',
     badge: 'Sovereign Presence',
     deliverables: [
@@ -57,7 +41,7 @@ export const SERVICES: Service[] = [
   {
     id: 'email-marketing',
     title: 'Email Marketing',
-    description: 'Sophisticated lifecycle automation and direct-to-royal communication that drives conversion.',
+    description: 'Emails that reach the right person, at the right moment, with the right message.',
     longDescription: 'Your customer’s inbox is a private gallery. We orchestrate highly tailored, editorial-first newsletters and private club automation workflows that drive recurring engagement without compromises.',
     icon: 'Mail',
     badge: 'Private Correspondence',

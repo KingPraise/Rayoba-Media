@@ -5,7 +5,8 @@
 
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { Sun, Moon, Menu, X, Crown, Sparkles } from 'lucide-react';
+import { Sun, Moon, Menu, X, Sparkles } from 'lucide-react';
+import rayobaLogo from '../assets/images/regenerated_image_1780485140000.png';
 
 interface NavbarProps {
   activePage: 'home' | 'about' | 'services' | 'portfolio' | 'contact';
@@ -85,11 +86,11 @@ export default function Navbar({ activePage, onNavigateToPage, onOpenPlanner }: 
           {/* Logo */}
           <button 
             onClick={() => handleLinkClick('home')}
-            className="flex items-center gap-2 font-display text-2xl md:text-3xl font-bold tracking-tight text-royal-gold hover:opacity-90 transition-opacity cursor-pointer text-left"
+            className="flex items-center gap-2 font-display text-2xl md:text-3xl font-bold tracking-tight text-royal-purple hover:opacity-90 transition-opacity cursor-pointer text-left"
             id="brand-logo"
           >
-            <Crown className="w-6 h-6 stroke-[1.5] text-royal-gold" />
-            <span className="font-display tracking-tight text-royal-gold">Rayoba Creatives</span>
+            <img src={rayobaLogo} alt="Rayoba Creatives Logo" className="w-7 h-7 object-contain" />
+            <span className="font-display tracking-tight text-royal-purple">Rayoba Creatives</span>
           </button>
 
           {/* Desktop Navigation */}
@@ -102,13 +103,13 @@ export default function Navbar({ activePage, onNavigateToPage, onOpenPlanner }: 
                   onClick={() => handleLinkClick(link.page)}
                   className={`font-sans text-xs uppercase tracking-wider font-semibold transition-colors duration-300 cursor-pointer relative py-1 group/item ${
                     isActive 
-                      ? 'text-royal-gold' 
-                      : 'text-gray-700 dark:text-gray-300 hover:text-royal-gold'
+                      ? 'text-royal-purple' 
+                      : 'text-gray-700 dark:text-gray-300 hover:text-royal-purple'
                   }`}
                   id={`nav-link-${link.page}`}
                 >
                   {link.name}
-                  <span className={`absolute bottom-0 left-0 h-0.5 bg-royal-gold transition-all duration-300 ${
+                  <span className={`absolute bottom-0 left-0 h-0.5 bg-royal-purple transition-all duration-300 ${
                     isActive ? 'w-full' : 'w-0 group-hover/item:w-full'
                   }`} />
                 </button>
@@ -129,13 +130,13 @@ export default function Navbar({ activePage, onNavigateToPage, onOpenPlanner }: 
               {isDark ? <Sun className="w-[18px] h-[18px]" /> : <Moon className="w-[18px] h-[18px]" />}
             </motion.button>
 
-            {/* Legacy CTA */}
+            {/* CTA */}
             <button
-              onClick={onOpenPlanner || (() => handleLinkClick('contact'))}
+              onClick={() => handleLinkClick('contact')}
               className="hidden sm:inline-flex items-center justify-center bg-royal-gold hover:bg-royal-gold/90 text-deep-violet font-bold text-[10px] uppercase tracking-wider px-4.5 py-2.5 rounded-xl transition-all cursor-pointer shadow-md"
               id="nav-cta-btn"
             >
-              Consult Legacy
+              Get Started
             </button>
 
             {/* Mobile Menu Toggle */}
@@ -187,7 +188,7 @@ export default function Navbar({ activePage, onNavigateToPage, onOpenPlanner }: 
                   }}
                   className="w-full bg-royal-gold text-deep-violet font-bold text-center py-3.5 rounded-xl tracking-wider uppercase text-[10px]"
                 >
-                  Build Custom Legacy Planner
+                  Get Started
                 </button>
               </div>
             </div>

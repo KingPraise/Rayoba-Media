@@ -54,7 +54,7 @@ export default function Hero({ onScrollToSection, onOpenPlanner }: HeroProps) {
     <section
       ref={containerRef}
       style={{ id: 'hero-section' }}
-      className="relative min-h-[95vh] flex flex-col items-center justify-center pt-32 overflow-hidden px-6 md:px-12 text-center"
+      className="relative min-h-[78vh] flex flex-col items-center justify-center pt-20 overflow-hidden px-6 md:px-12 text-center"
     >
       {/* Film Grain background accent */}
       <div className="film-grain absolute inset-0 z-0 opacity-[0.03] pointer-events-none" />
@@ -131,10 +131,10 @@ export default function Hero({ onScrollToSection, onOpenPlanner }: HeroProps) {
           className="font-display text-4xl sm:text-5xl md:text-7xl leading-tight font-black tracking-tight text-gray-900 dark:text-gilded-ivory"
           id="hero-header"
         >
-          The Light of a King.
+          We Give Your Presence
           <br />
-          <span className="text-royal-gold relative block mt-2">
-            Where Your Presence Meets Royalty.
+          <span className="text-royal-purple relative block mt-2">
+            the Royalty it Deserves
           </span>
         </motion.h1>
 
@@ -168,7 +168,7 @@ export default function Hero({ onScrollToSection, onOpenPlanner }: HeroProps) {
 
           <button
             onClick={() => onScrollToSection('portfolio')}
-            className="w-full sm:w-auto px-8 py-4 rounded-xl border border-royal-gold/40 text-royal-gold font-medium text-sm tracking-wide uppercase hover:bg-royal-gold/5 active:bg-royal-gold/10 transition-colors cursor-pointer"
+            className="w-full sm:w-auto px-8 py-4 rounded-xl border border-royal-gold text-royal-purple font-medium text-sm tracking-wide uppercase hover:bg-royal-purple/5 active:bg-royal-purple/10 transition-colors cursor-pointer"
             id="hero-nav-portfolio-btn"
           >
             View Portfolio
@@ -186,7 +186,7 @@ export default function Hero({ onScrollToSection, onOpenPlanner }: HeroProps) {
           repeat: Infinity,
           ease: "easeInOut"
         }}
-        onClick={() => onScrollToSection('origin-story')}
+        onClick={() => onScrollToSection('vision-section')}
         className="absolute bottom-6 left-1/2 -translate-x-1/2 cursor-pointer p-3 rounded-full hover:bg-royal-gold/10 text-royal-gold/60 hover:text-royal-gold transition-all"
         title="Scroll Down"
         id="hero-scroll-trigger"

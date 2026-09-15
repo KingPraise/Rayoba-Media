@@ -8,7 +8,6 @@ import Hero from './Hero';
 import OriginalOriginStory from './OriginStory';
 import { SERVICES, PROJECTS } from '../data';
 import { Palette, Globe, Share2, Mail, ArrowRight, Shield, Sparkles, Award } from 'lucide-react';
-import LegacyPlanner from './LegacyPlanner';
 import TestimonialSection from './TestimonialSection';
 import TrustedByMarquee from './TrustedByMarquee';
 
@@ -26,7 +25,6 @@ const ICON_MAP: Record<string, any> = {
 export default function HomePage({ onNavigateToPage }: HomePageProps) {
 
   const handleScrollToSection = (id: string) => {
-    // If we want to scroll to sections on the homepage
     if (id === 'portfolio') {
       onNavigateToPage('portfolio');
     } else if (id === 'builder-section') {
@@ -36,6 +34,11 @@ export default function HomePage({ onNavigateToPage }: HomePageProps) {
       }
     } else if (id === 'origin-story') {
       onNavigateToPage('about');
+    } else if (id === 'vision-section') {
+      const el = document.getElementById('vision-section');
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth' });
+      }
     }
   };
 
@@ -53,6 +56,7 @@ export default function HomePage({ onNavigateToPage }: HomePageProps) {
 
       {/* Elegant Quick Bio summary banner */}
       <motion.section
+        id="vision-section"
         initial={{ opacity: 0, y: 35 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-60px" }}
@@ -62,11 +66,11 @@ export default function HomePage({ onNavigateToPage }: HomePageProps) {
         <div className="max-w-7xl mx-auto px-6 md:px-12">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
             <div className="lg:col-span-8 space-y-4">
-              <span className="font-sans text-xs text-royal-gold font-semibold uppercase tracking-widest">Our Vision</span>
-              <h2 className="font-display text-2xl md:text-3.5xl font-black text-gray-950 dark:text-gilded-ivory max-w-2xl leading-tight">
+              <span className="font-sans text-base text-royal-gold font-semibold uppercase tracking-widest">Our Vision</span>
+              <h2 className="font-display text-3xl md:text-4xl font-black text-gray-950 dark:text-gilded-ivory max-w-2xl leading-tight">
                 Derived from absolute light & sovereign authority, we help your brand rise.
               </h2>
-              <p className="font-sans text-sm md:text-base text-gray-600 dark:text-gray-400 max-w-xl">
+              <p className="font-sans text-base md:text-lg text-gray-600 dark:text-gray-400 max-w-xl">
                 We believe that premium services require uncompromised visual systems. Every custom digital showroom, crest, and grid we assemble is geared for high-performance scale and undeniable prestige.
               </p>
             </div>
@@ -75,10 +79,10 @@ export default function HomePage({ onNavigateToPage }: HomePageProps) {
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.97 }}
                 onClick={() => onNavigateToPage('about')}
-                className="inline-flex items-center gap-2 px-6 py-3.5 border border-royal-gold text-royal-gold text-xs font-bold uppercase tracking-wider rounded-xl hover:bg-royal-gold/5 active:bg-royal-gold/10 transition-all cursor-pointer group"
+                className="inline-flex items-center gap-2 px-6 py-3.5 border border-royal-gold text-purple-400 text-xs font-bold uppercase tracking-wider rounded-xl hover:bg-purple-400/5 active:bg-purple-400/10 transition-all cursor-pointer group"
               >
                 <span>Read Our Legend</span>
-                <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
+                <ArrowRight className="w-3.5 h-3.5 text-purple-400 group-hover:translate-x-1 transition-transform" />
               </motion.button>
             </div>
           </div>
@@ -94,9 +98,8 @@ export default function HomePage({ onNavigateToPage }: HomePageProps) {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <span className="font-sans text-xs text-royal-gold font-semibold uppercase tracking-widest">Bespoke Offerings</span>
-            <h2 className="font-display text-3xl md:text-4.5xl font-black text-gray-950 dark:text-gilded-ivory mt-2">
-              The Departments of Rayoba
+            <h2 className="font-display text-3xl md:text-4.5xl font-black text-gray-950 dark:text-gilded-ivory">
+              Our Services
             </h2>
           </motion.div>
           <motion.button
@@ -107,14 +110,19 @@ export default function HomePage({ onNavigateToPage }: HomePageProps) {
             onClick={() => onNavigateToPage('services')}
             className="inline-flex items-center gap-1 text-royal-gold text-xs md:text-sm font-bold uppercase tracking-wider hover:underline"
           >
-            <span>Explore All Departments</span>
+            <span>Explore All Services</span>
             <ArrowRight className="w-3.5 h-3.5" />
           </motion.button>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {SERVICES.slice(0, 4).map((srv, index) => {
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {SERVICES.slice(0, 3).map((srv, index) => {
             const IconComp = ICON_MAP[srv.icon] || Palette;
+            const serviceIdMap: Record<string, string> = {
+              'graphic-design': 'service-graphic-design',
+              'social-strategy': 'service-social-strategy',
+              'email-marketing': 'service-email-marketing',
+            };
             return (
               <motion.div
                 key={srv.id}
@@ -123,17 +131,21 @@ export default function HomePage({ onNavigateToPage }: HomePageProps) {
                 viewport={{ once: true, margin: "-40px" }}
                 transition={{ duration: 0.6, delay: index * 0.1, ease: 'easeOut' }}
                 whileHover={{ scale: 1.03, y: -4 }}
-                onClick={() => onNavigateToPage('services')}
+                onClick={() => {
+                  const targetId = serviceIdMap[srv.id];
+                  if (targetId) sessionStorage.setItem('scrollToService', targetId);
+                  onNavigateToPage('services');
+                }}
                 className="p-6 rounded-2xl border border-royal-gold/15 bg-white/40 dark:bg-zinc-950/20 hover:border-royal-gold/40 transition-all duration-300 group cursor-pointer flex flex-col justify-between min-h-[220px]"
               >
                 <div className="space-y-4">
                   <div className="p-3 bg-royal-gold/10 text-royal-gold rounded-xl w-fit group-hover:bg-royal-gold group-hover:text-deep-violet transition-colors">
                     <IconComp className="w-5 h-5" />
                   </div>
-                  <h3 className="font-display text-lg font-bold text-gray-950 dark:text-gilded-ivory group-hover:text-royal-gold transition-colors">
+                  <h3 className="font-display text-xl font-bold text-gray-950 dark:text-gilded-ivory group-hover:text-royal-gold transition-colors">
                     {srv.title}
                   </h3>
-                  <p className="font-sans text-xs text-gray-500 dark:text-gray-400 leading-relaxed line-clamp-3">
+                  <p className="font-sans text-sm text-gray-500 dark:text-gray-400 leading-relaxed line-clamp-3">
                     {srv.description}
                   </p>
                 </div>
@@ -213,24 +225,11 @@ export default function HomePage({ onNavigateToPage }: HomePageProps) {
         </div>
       </section>
 
-      {/* Testimonials Block */}
-      <TestimonialSection />
-
+      {/* Trusted Brands Block */}
       <TrustedByMarquee />
 
-      {/* The majestic interactive Custom stature builder/Legacy planner */}
-      <motion.section
-        initial={{ opacity: 0, y: 40 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, margin: "-40px" }}
-        transition={{ duration: 0.8 }}
-        className="py-24"
-        id="builder-section"
-      >
-        <div className="max-w-7xl mx-auto px-6 md:px-12">
-          <LegacyPlanner />
-        </div>
-      </motion.section>
+      {/* Testimonials Block */}
+      <TestimonialSection />
 
     </div>
   );

@@ -57,15 +57,15 @@ export default function TestimonialSection() {
         }}
         className="max-w-4xl mx-auto"
       >
-        {/* Top pill badge */}
+        {/* Sovereign Testimonies title */}
         <motion.div
           variants={{
             hidden: { opacity: 0, y: 15 },
             visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } }
           }}
-          className="inline-flex items-center px-5 py-2 rounded-full bg-royal-gold/10 dark:bg-[#211A0D] text-royal-gold uppercase tracking-widest text-[10px] md:text-xs font-bold mb-6"
+          className="font-display font-extrabold uppercase tracking-wide text-2xl sm:text-3xl md:text-4xl text-royal-purple mb-4"
         >
-          SOVEREIGN TESTIMONIES
+          Sovereign Testimonies
         </motion.div>
         
         {/* Header */}

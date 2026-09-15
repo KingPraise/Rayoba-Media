@@ -33,14 +33,10 @@ export default function App() {
       setCurrentPage('home');
     } else if (targetId === 'portfolio') {
       setCurrentPage('portfolio');
-    } else if (targetId === 'builder-section') {
-      setCurrentPage('home');
-      setTimeout(() => {
-        const el = document.getElementById('builder-section');
-        if (el) {
-          el.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
-      }, 150);
+    } else if (targetId === 'contact' || targetId === 'builder-section') {
+      setCurrentPage('contact');
+    } else if (targetId === 'services-section') {
+      setCurrentPage('services');
     }
   };
 
