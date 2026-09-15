@@ -80,7 +80,7 @@ export default function ContactPage() {
       <section className="max-w-7xl mx-auto px-6 md:px-12 w-full mt-8 md:mt-16 mb-20 z-10" id="contact-hero-sect">
         <div className="flex flex-col md:flex-row gap-8 items-center md:items-start justify-between">
           <div className="w-full md:w-1/2 text-left" id="contact-title-group">
-            <span className="font-sans text-xs md:text-sm text-royal-gold font-semibold tracking-[0.2em] mb-4 block uppercase p-1">
+            <span className="font-sans text-xs md:text-sm text-royal-purple font-semibold tracking-[0.2em] mb-4 block uppercase p-1">
               Royal Entry
             </span>
             <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 dark:text-gilded-ivory leading-tight mb-6">
@@ -120,8 +120,8 @@ export default function ContactPage() {
 
               <div className="space-y-6">
                 <div className="flex items-center gap-4 p-5 bg-off-white dark:bg-midnight-royal/60 rounded-2xl border border-royal-gold/10 hover:border-royal-gold/30 hover:scale-[1.03] transition-all group shadow-sm">
-                  <div className="p-3 bg-royal-gold/10 text-royal-gold rounded-xl group-hover:bg-royal-gold/20 transition-colors">
-                    <Sparkles className="w-5 h-5 text-royal-gold animate-pulse" />
+                  <div className="p-3 bg-royal-gold/10 text-royal-purple rounded-xl group-hover:bg-royal-gold/20 transition-colors">
+                    <Sparkles className="w-5 h-5 text-royal-purple animate-pulse" />
                   </div>
                   <div>
                     <p className="font-sans text-sm font-semibold text-gray-900 dark:text-gilded-ivory">Priority Response</p>
@@ -130,8 +130,8 @@ export default function ContactPage() {
                 </div>
 
                 <div className="flex items-center gap-4 p-5 bg-off-white dark:bg-midnight-royal/60 rounded-2xl border border-royal-gold/10 hover:border-royal-gold/30 hover:scale-[1.03] transition-all group shadow-sm">
-                  <div className="p-3 bg-royal-gold/10 text-royal-gold rounded-xl group-hover:bg-royal-gold/20 transition-colors">
-                    <Award className="w-5 h-5 text-royal-gold" />
+                  <div className="p-3 bg-royal-gold/10 text-royal-purple rounded-xl group-hover:bg-royal-gold/20 transition-colors">
+                    <Award className="w-5 h-5 text-royal-purple" />
                   </div>
                   <div>
                     <p className="font-sans text-sm font-semibold text-gray-900 dark:text-gilded-ivory">Certified Quality</p>
@@ -156,7 +156,7 @@ export default function ContactPage() {
                       : 'translate(0, 0)'
                   }}
                 >
-                  <label className="font-sans text-xs font-semibold uppercase tracking-wider text-gray-500 group-focus-within:text-royal-gold transition-colors">
+                  <label className="font-sans text-xs font-semibold uppercase tracking-wider text-gray-500 group-focus-within:text-royal-purple transition-colors">
                     Your Full Name
                   </label>
                   <input 
@@ -180,7 +180,7 @@ export default function ContactPage() {
                       : 'translate(0, 0)'
                   }}
                 >
-                  <label className="font-sans text-xs font-semibold uppercase tracking-wider text-gray-500 group-focus-within:text-royal-gold transition-colors">
+                  <label className="font-sans text-xs font-semibold uppercase tracking-wider text-gray-500 group-focus-within:text-royal-purple transition-colors">
                     Professional Email
                   </label>
                   <input 
@@ -221,7 +221,7 @@ export default function ContactPage() {
 
                 {/* Description Textarea */}
                 <div className="space-y-2 md:col-span-2 group">
-                  <label className="font-sans text-xs font-semibold uppercase tracking-wider text-gray-500 group-focus-within:text-royal-gold transition-colors">
+                  <label className="font-sans text-xs font-semibold uppercase tracking-wider text-gray-500 group-focus-within:text-royal-purple transition-colors">
                     Brief Description
                   </label>
                   <textarea 
@@ -298,7 +298,7 @@ export default function ContactPage() {
           
           {/* Animated location beacon */}
           <div className="flex items-center justify-center h-full z-20 relative">
-            <div className="relative p-8 md:p-12 rounded-full border-2 border-royal-gold/30 bg-white/60 dark:bg-midnight-royal/60 backdrop-blur-md anim-pulse shadow-2xl flex items-center justify-center text-royal-gold">
+            <div className="relative p-8 md:p-12 rounded-full border-2 border-royal-gold/30 bg-white/60 dark:bg-midnight-royal/60 backdrop-blur-md anim-pulse shadow-2xl flex items-center justify-center text-royal-purple">
               
               <div className="absolute -top-16 left-1/2 -translate-x-1/2 bg-midnight-royal dark:bg-royal-gold text-gilded-ivory dark:text-midnight-royal px-5 py-2.5 rounded-xl font-sans text-xs font-semibold tracking-wider whitespace-nowrap uppercase shadow-xl border border-royal-gold/20">
                 487 Royal Plaza, New York
@@ -308,7 +308,7 @@ export default function ContactPage() {
                 animate={{ scale: [1, 1.15, 1] }}
                 transition={{ repeat: Infinity, duration: 3, ease: 'easeInOut' }}
               >
-                <MapPin className="w-12 h-12 text-royal-gold fill-royal-gold/20" />
+                <MapPin className="w-12 h-12 text-royal-purple fill-royal-gold/20" />
               </motion.div>
             </div>
           </div>
@@ -332,7 +332,7 @@ export default function ContactPage() {
           
           {/* Box 1 */}
           <div className="p-8 pb-10 rounded-3xl border border-royal-gold/15 bg-white/40 dark:bg-black/20 hover:border-royal-gold transition-all duration-500 backdrop-blur-md group shadow-sm">
-            <Mail className="w-8 h-8 text-royal-gold mb-6 group-hover:scale-110 transition-transform duration-300" />
+            <Mail className="w-8 h-8 text-royal-purple mb-6 group-hover:scale-110 transition-transform duration-300" />
             <h3 className="font-display text-xl md:text-2xl font-black text-gray-900 dark:text-gilded-ivory mb-2">
               Editorial
             </h3>
@@ -340,7 +340,7 @@ export default function ContactPage() {
               For press, literature submissions, and creative showcase inquiries.
             </p>
             <a 
-              className="font-sans text-xs md:text-sm font-semibold text-royal-gold hover:text-royal-gold/80 transition-colors uppercase tracking-wider relative group/link inline-block" 
+              className="font-sans text-xs md:text-sm font-semibold text-royal-purple hover:text-royal-purple/80 transition-colors uppercase tracking-wider relative group/link inline-block" 
               href="mailto:editorial@rayoba.media"
             >
               editorial@rayoba.media
@@ -350,7 +350,7 @@ export default function ContactPage() {
 
           {/* Box 2 */}
           <div className="p-8 pb-10 rounded-3xl border border-royal-gold/15 bg-white/40 dark:bg-black/20 hover:border-royal-gold transition-all duration-500 backdrop-blur-md group shadow-sm">
-            <Phone className="w-8 h-8 text-royal-gold mb-6 group-hover:scale-110 transition-transform duration-300" />
+            <Phone className="w-8 h-8 text-royal-purple mb-6 group-hover:scale-110 transition-transform duration-300" />
             <h3 className="font-display text-xl md:text-2xl font-black text-gray-900 dark:text-gilded-ivory mb-2">
               The Concierge
             </h3>
@@ -358,7 +358,7 @@ export default function ContactPage() {
               Direct voice guidance with our master creative partners and strategists.
             </p>
             <a 
-              className="font-sans text-xs md:text-sm font-semibold text-royal-gold hover:text-royal-gold/80 transition-colors uppercase tracking-wider relative group/link inline-block" 
+              className="font-sans text-xs md:text-sm font-semibold text-royal-purple hover:text-royal-purple/80 transition-colors uppercase tracking-wider relative group/link inline-block" 
               href="tel:+12125550198"
             >
               +1 (212) 555-0198
@@ -368,7 +368,7 @@ export default function ContactPage() {
 
           {/* Box 3 */}
           <div className="p-8 pb-10 rounded-3xl border border-royal-gold/15 bg-white/40 dark:bg-black/20 hover:border-royal-gold transition-all duration-500 backdrop-blur-md group shadow-sm">
-            <Users className="w-8 h-8 text-royal-gold mb-6 group-hover:scale-110 transition-transform duration-300" />
+            <Users className="w-8 h-8 text-royal-purple mb-6 group-hover:scale-110 transition-transform duration-300" />
             <h3 className="font-display text-xl md:text-2xl font-black text-gray-900 dark:text-gilded-ivory mb-2">
               Partnerships
             </h3>
@@ -376,7 +376,7 @@ export default function ContactPage() {
               Strategic brand collaborations, multi-venture alliances, and market growth.
             </p>
             <a 
-              className="font-sans text-xs md:text-sm font-semibold text-royal-gold hover:text-royal-gold/80 transition-colors uppercase tracking-wider relative group/link inline-block" 
+              className="font-sans text-xs md:text-sm font-semibold text-royal-purple hover:text-royal-purple/80 transition-colors uppercase tracking-wider relative group/link inline-block" 
               href="#"
               onClick={(e) => { e.preventDefault(); alert('Our comprehensive Partnership Prospectus is preparing for delivery. Please write to the Concierge for early review.'); }}
             >

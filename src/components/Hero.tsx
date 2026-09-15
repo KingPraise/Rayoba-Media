@@ -187,7 +187,7 @@ export default function Hero({ onScrollToSection, onOpenPlanner }: HeroProps) {
           ease: "easeInOut"
         }}
         onClick={() => onScrollToSection('vision-section')}
-        className="absolute bottom-6 left-1/2 -translate-x-1/2 cursor-pointer p-3 rounded-full hover:bg-royal-gold/10 text-royal-gold/60 hover:text-royal-gold transition-all"
+        className="absolute bottom-6 left-1/2 -translate-x-1/2 cursor-pointer p-3 rounded-full hover:bg-royal-gold/10 text-royal-purple/60 hover:text-royal-purple transition-all"
         title="Scroll Down"
         id="hero-scroll-trigger"
       >

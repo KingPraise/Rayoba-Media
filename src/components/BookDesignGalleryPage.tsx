@@ -25,7 +25,7 @@ export default function BookDesignGalleryPage({ onNavigateToPage }: Props) {
         
         <h1 className="font-display text-4xl md:text-6xl font-black text-gray-950 dark:text-gilded-ivory tracking-tight mb-6 leading-tight">
           Book Design <br className="hidden md:block" />
-          <span className="text-royal-gold italic font-light">Complete Volumes</span>
+          <span className="text-royal-purple italic font-light">Complete Volumes</span>
         </h1>
         <p className="font-sans text-sm md:text-base text-gray-600 dark:text-gray-400 max-w-2xl mx-auto mb-16 leading-relaxed">
           The full collection of our authoritative publishing and editorial works. Each volume here embodies strict typographical doctrine and uncompromising aesthetic standards.
@@ -49,7 +49,7 @@ export default function BookDesignGalleryPage({ onNavigateToPage }: Props) {
                   className="h-full w-full object-cover transition-transform duration-700 hover:scale-105"
                 />
                 <div className="absolute top-4 left-4 flex gap-2">
-                  <span className="font-sans text-[9px] font-bold tracking-widest uppercase bg-midnight-royal text-royal-gold px-3 py-1.5 rounded-full border border-royal-gold/25 shadow-lg">
+                  <span className="font-sans text-[9px] font-bold tracking-widest uppercase bg-midnight-royal text-royal-purple px-3 py-1.5 rounded-full border border-royal-gold/25 shadow-lg">
                     BOOK DESIGN
                   </span>
                 </div>

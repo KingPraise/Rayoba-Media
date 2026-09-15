@@ -32,7 +32,7 @@ export default function BentoServices() {
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="inline-flex px-4 py-1.5 rounded-full bg-royal-gold/10 border border-royal-gold/25 text-royal-gold text-[10px] md:text-xs font-semibold uppercase tracking-widest"
+            className="inline-flex px-4 py-1.5 rounded-full bg-royal-gold/10 border border-royal-gold/25 text-royal-purple text-[10px] md:text-xs font-semibold uppercase tracking-widest"
           >
             Digital Armament
           </motion.div>
@@ -67,17 +67,17 @@ export default function BentoServices() {
             id="service-card-graphics"
           >
             <div className="relative z-10 h-full flex flex-col justify-between space-y-8 md:space-y-0 text-left">
-              <div className="p-3 bg-royal-gold/10 rounded-2xl w-fit text-royal-gold">
+              <div className="p-3 bg-royal-gold/10 rounded-2xl w-fit text-royal-purple">
                 {getIcon('Palette', 'w-8 h-8')}
               </div>
               <div className="space-y-2 mt-4">
-                <span className="font-sans text-[10px] uppercase font-bold text-royal-gold tracking-widest">{SERVICES[0].badge}</span>
+                <span className="font-sans text-[10px] uppercase font-bold text-royal-purple tracking-widest">{SERVICES[0].badge}</span>
                 <h3 className="font-display text-2xl font-bold text-gray-900 dark:text-gilded-ivory">{SERVICES[0].title}</h3>
                 <p className="font-sans text-sm text-gray-600 dark:text-gray-400 max-w-md">{SERVICES[0].description}</p>
               </div>
             </div>
             {/* Massive background drawing brush icon */}
-            <div className="absolute top-2 right-2 p-8 opacity-[0.03] dark:opacity-[0.05] group-hover:opacity-10 dark:group-hover:opacity-[0.14] transition-opacity duration-300 text-royal-gold pointer-events-none">
+            <div className="absolute top-2 right-2 p-8 opacity-[0.03] dark:opacity-[0.05] group-hover:opacity-10 dark:group-hover:opacity-[0.14] transition-opacity duration-300 text-royal-purple pointer-events-none">
               <Brush className="w-56 h-56" />
             </div>
           </motion.button>
@@ -91,11 +91,11 @@ export default function BentoServices() {
           >
             <div className="absolute inset-0 bg-gradient-to-tr from-black/20 via-transparent to-white/10 opacity-60" />
             <div className="relative z-10 h-full flex flex-col justify-between space-y-8 md:space-y-0 text-left">
-              <div className="p-3 bg-royal-gold/20 rounded-2xl w-fit text-royal-gold">
-                {getIcon('Globe', 'w-8 h-8 text-royal-gold')}
+              <div className="p-3 bg-royal-gold/20 rounded-2xl w-fit text-royal-purple">
+                {getIcon('Globe', 'w-8 h-8 text-royal-purple')}
               </div>
               <div className="space-y-2">
-                <span className="font-sans text-[10px] uppercase font-bold text-royal-gold tracking-widest">{SERVICES[1].badge}</span>
+                <span className="font-sans text-[10px] uppercase font-bold text-royal-purple tracking-widest">{SERVICES[1].badge}</span>
                 <h3 className="font-display text-2xl font-bold text-gilded-ivory">{SERVICES[1].title}</h3>
                 <p className="font-sans text-sm text-gilded-ivory/80">{SERVICES[1].description}</p>
               </div>
@@ -110,11 +110,11 @@ export default function BentoServices() {
             id="service-card-social"
           >
             <div className="relative z-10 h-full flex flex-col justify-between space-y-8 md:space-y-0 text-left">
-              <div className="p-3 bg-royal-gold/10 rounded-2xl w-fit text-royal-gold">
+              <div className="p-3 bg-royal-gold/10 rounded-2xl w-fit text-royal-purple">
                 {getIcon('Share2', 'w-8 h-8')}
               </div>
               <div className="space-y-2">
-                <span className="font-sans text-[10px] uppercase font-bold text-royal-gold tracking-widest">{SERVICES[2].badge}</span>
+                <span className="font-sans text-[10px] uppercase font-bold text-royal-purple tracking-widest">{SERVICES[2].badge}</span>
                 <h3 className="font-display text-2xl font-bold text-gray-900 dark:text-gilded-ivory">{SERVICES[2].title}</h3>
                 <p className="font-sans text-sm text-gray-600 dark:text-gray-400">{SERVICES[2].description}</p>
               </div>
@@ -176,11 +176,11 @@ export default function BentoServices() {
 
                 {/* Badge & Title */}
                 <div className="flex items-center gap-3 mb-4">
-                  <div className="p-2.5 bg-royal-gold/15 rounded-xl text-royal-gold">
+                  <div className="p-2.5 bg-royal-gold/15 rounded-xl text-royal-purple">
                     {getIcon(selectedService.icon, "w-6 h-6")}
                   </div>
                   <div>
-                    <span className="text-[10px] uppercase font-black text-royal-gold tracking-widest">{selectedService.badge}</span>
+                    <span className="text-[10px] uppercase font-black text-royal-purple tracking-widest">{selectedService.badge}</span>
                     <h3 className="font-display text-3xl font-black text-gray-900 dark:text-gilded-ivory">{selectedService.title}</h3>
                   </div>
                 </div>
@@ -192,14 +192,14 @@ export default function BentoServices() {
 
                 {/* Deliverables Matrix */}
                 <div className="space-y-4 mb-6">
-                  <h4 className="font-display text-lg font-bold text-royal-gold flex items-center gap-2">
-                    <Sparkles className="w-4 h-4 text-royal-gold" />
+                  <h4 className="font-display text-lg font-bold text-royal-purple flex items-center gap-2">
+                    <Sparkles className="w-4 h-4 text-royal-purple" />
                     Sovereign Deliverables
                   </h4>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                     {selectedService.deliverables.map((item, idx) => (
                       <div key={idx} className="flex gap-2.5 items-start p-3 rounded-xl bg-gray-50 dark:bg-white/5 border border-royal-gold/10">
-                        <CheckCircle2 className="w-4.5 h-4.5 text-royal-gold shrink-0 mt-0.5" />
+                        <CheckCircle2 className="w-4.5 h-4.5 text-royal-purple shrink-0 mt-0.5" />
                         <span className="text-xs text-gray-700 dark:text-gray-300 leading-tight">{item}</span>
                       </div>
                     ))}
@@ -209,14 +209,14 @@ export default function BentoServices() {
                 {/* Method & Timeline footer in modal */}
                 <div className="pt-6 border-t border-royal-gold/20 grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm font-sans">
                   <div className="flex items-center gap-3">
-                    <Clock className="w-5 h-5 text-royal-gold" />
+                    <Clock className="w-5 h-5 text-royal-purple" />
                     <div>
                       <span className="text-[10px] uppercase tracking-wider block text-gray-400">Timeline expectation</span>
                       <strong className="text-gray-900 dark:text-gilded-ivory">{selectedService.timeline}</strong>
                     </div>
                   </div>
                   <div className="flex items-center gap-3">
-                    <Map className="w-5 h-5 text-royal-gold" />
+                    <Map className="w-5 h-5 text-royal-purple" />
                     <div>
                       <span className="text-[10px] uppercase tracking-wider block text-gray-400">Artisan Methodology</span>
                       <p className="text-xs font-semibold text-gray-900 dark:text-gilded-ivory leading-tight">{selectedService.methodology}</p>

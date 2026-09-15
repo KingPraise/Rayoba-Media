@@ -27,7 +27,7 @@ export default function Portfolio() {
         {/* Header Block with Floating Elements */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
           <div className="space-y-3 text-left">
-            <span className="text-royal-gold font-sans font-semibold tracking-widest text-xs uppercase block">
+            <span className="text-royal-purple font-sans font-semibold tracking-widest text-xs uppercase block">
               FEATURED PROJECTS
             </span>
             <h2 className="font-display text-4xl sm:text-5xl font-black text-gray-900 dark:text-gilded-ivory" id="portfolio-heading">
@@ -85,7 +85,7 @@ export default function Portfolio() {
                   </span>
                 </div>
 
-                <div className="absolute top-4 right-4 bg-midnight-royal/90 text-royal-gold border border-royal-gold/40 p-2.5 rounded-full opacity-90 group-hover:opacity-100 transition-opacity">
+                <div className="absolute top-4 right-4 bg-midnight-royal/90 text-royal-purple border border-royal-gold/40 p-2.5 rounded-full opacity-90 group-hover:opacity-100 transition-opacity">
                   <ArrowUpRight className="w-5 h-5" />
                 </div>
               </div>
@@ -93,7 +93,7 @@ export default function Portfolio() {
               {/* Text Narrative block for Project */}
               <div className="flex flex-col space-y-3 text-left">
                 <div className="flex items-center gap-3">
-                  <span className="text-[10px] uppercase font-bold text-royal-gold tracking-widest bg-royal-gold/10 px-2.5 py-1 rounded-full border border-royal-gold/10">
+                  <span className="text-[10px] uppercase font-bold text-royal-purple tracking-widest bg-royal-gold/10 px-2.5 py-1 rounded-full border border-royal-gold/10">
                     {project.category}
                   </span>
                   <span className="text-xs text-gray-400 dark:text-gray-500 font-mono">
@@ -101,7 +101,7 @@ export default function Portfolio() {
                   </span>
                 </div>
 
-                <h3 className="font-display text-2xl font-bold text-gray-900 dark:text-gilded-ivory group-hover:text-royal-gold transition-colors">
+                <h3 className="font-display text-2xl font-bold text-gray-900 dark:text-gilded-ivory group-hover:text-royal-purple transition-colors">
                   {project.title}
                 </h3>
 
@@ -111,7 +111,7 @@ export default function Portfolio() {
 
                 <button
                   onClick={() => setSelectedProject(project)}
-                  className="inline-flex items-center gap-2 text-royal-gold hover:text-royal-gold/80 font-bold text-xs uppercase tracking-widest mt-2 cursor-pointer pt-1 self-start group/btn"
+                  className="inline-flex items-center gap-2 text-royal-purple hover:text-royal-purple/80 font-bold text-xs uppercase tracking-widest mt-2 cursor-pointer pt-1 self-start group/btn"
                 >
                   View Case Study
                   <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1.5 transition-transform" />
@@ -141,7 +141,7 @@ export default function Portfolio() {
                     className="w-full h-full object-cover transition-all duration-700 group-hover:scale-105"
                   />
                   <div className="absolute top-4 left-4 flex gap-2">
-                    <span className="font-sans text-[9px] font-bold tracking-widest uppercase bg-midnight-royal/80 text-royal-gold px-3 py-1.5 rounded-full border border-royal-gold/25 shadow-lg backdrop-blur-sm">
+                    <span className="font-sans text-[9px] font-bold tracking-widest uppercase bg-midnight-royal/80 text-royal-purple px-3 py-1.5 rounded-full border border-royal-gold/25 shadow-lg backdrop-blur-sm">
                       {proj.tag}
                     </span>
                   </div>
@@ -151,14 +151,14 @@ export default function Portfolio() {
                 <div className="space-y-3">
                   <div className="flex justify-between items-start">
                     <div>
-                      <span className="font-sans text-[10px] text-royal-gold font-bold uppercase tracking-widest">
+                      <span className="font-sans text-[10px] text-royal-purple font-bold uppercase tracking-widest">
                         {proj.category}
                       </span>
                       <h3 className="font-display text-2xl font-black text-gray-900 dark:text-gilded-ivory mt-1">
                         {proj.title}
                       </h3>
                     </div>
-                    <ArrowUpRight className="w-5 h-5 text-gray-400 group-hover:text-royal-gold transition-colors" />
+                    <ArrowUpRight className="w-5 h-5 text-gray-400 group-hover:text-royal-purple transition-colors" />
                   </div>
 
                   <p className="font-sans text-sm text-gray-600 dark:text-gray-400 line-clamp-2">
@@ -167,10 +167,10 @@ export default function Portfolio() {
 
                   <div className="flex gap-4 pt-4 mt-4 border-t border-royal-gold/10 text-[10px] font-sans">
                     <div className="flex items-center gap-1.5 text-gray-500 dark:text-gray-400">
-                      <span className="font-bold text-royal-gold/80 uppercase">Client:</span> {proj.client}
+                      <span className="font-bold text-royal-purple/80 uppercase">Client:</span> {proj.client}
                     </div>
                     <div className="flex items-center gap-1.5 text-gray-500 dark:text-gray-400">
-                      <span className="font-bold text-royal-gold/80 uppercase">Year:</span> {proj.year}
+                      <span className="font-bold text-royal-purple/80 uppercase">Year:</span> {proj.year}
                     </div>
                   </div>
                 </div>
@@ -199,7 +199,7 @@ export default function Portfolio() {
                     className="w-full h-full object-cover transition-all duration-700 group-hover:scale-105"
                   />
                   <div className="absolute top-4 left-4 flex gap-2">
-                    <span className="font-sans text-[9px] font-bold tracking-widest uppercase bg-midnight-royal/80 text-royal-gold px-3 py-1.5 rounded-full border border-royal-gold/25 shadow-lg backdrop-blur-sm">
+                    <span className="font-sans text-[9px] font-bold tracking-widest uppercase bg-midnight-royal/80 text-royal-purple px-3 py-1.5 rounded-full border border-royal-gold/25 shadow-lg backdrop-blur-sm">
                       {proj.tag}
                     </span>
                   </div>
@@ -209,14 +209,14 @@ export default function Portfolio() {
                 <div className="space-y-3">
                   <div className="flex justify-between items-start">
                     <div>
-                      <span className="font-sans text-[10px] text-royal-gold font-bold uppercase tracking-widest">
+                      <span className="font-sans text-[10px] text-royal-purple font-bold uppercase tracking-widest">
                         {proj.category}
                       </span>
                       <h3 className="font-display text-2xl font-black text-gray-900 dark:text-gilded-ivory mt-1">
                         {proj.title}
                       </h3>
                     </div>
-                    <ArrowUpRight className="w-5 h-5 text-gray-400 group-hover:text-royal-gold transition-colors" />
+                    <ArrowUpRight className="w-5 h-5 text-gray-400 group-hover:text-royal-purple transition-colors" />
                   </div>
 
                   <p className="font-sans text-sm text-gray-600 dark:text-gray-400 line-clamp-2">
@@ -225,10 +225,10 @@ export default function Portfolio() {
 
                   <div className="flex gap-4 pt-4 mt-4 border-t border-royal-gold/10 text-[10px] font-sans">
                     <div className="flex items-center gap-1.5 text-gray-500 dark:text-gray-400">
-                      <span className="font-bold text-royal-gold/80 uppercase">Client:</span> {proj.client}
+                      <span className="font-bold text-royal-purple/80 uppercase">Client:</span> {proj.client}
                     </div>
                     <div className="flex items-center gap-1.5 text-gray-500 dark:text-gray-400">
-                      <span className="font-bold text-royal-gold/80 uppercase">Year:</span> {proj.year}
+                      <span className="font-bold text-royal-purple/80 uppercase">Year:</span> {proj.year}
                     </div>
                   </div>
                 </div>
@@ -257,7 +257,7 @@ export default function Portfolio() {
                     className="w-full h-full object-cover transition-all duration-700 group-hover:scale-105"
                   />
                   <div className="absolute top-4 left-4 flex gap-2">
-                    <span className="font-sans text-[9px] font-bold tracking-widest uppercase bg-midnight-royal/80 text-royal-gold px-3 py-1.5 rounded-full border border-royal-gold/25 shadow-lg backdrop-blur-sm">
+                    <span className="font-sans text-[9px] font-bold tracking-widest uppercase bg-midnight-royal/80 text-royal-purple px-3 py-1.5 rounded-full border border-royal-gold/25 shadow-lg backdrop-blur-sm">
                       {proj.tag}
                     </span>
                   </div>
@@ -267,14 +267,14 @@ export default function Portfolio() {
                 <div className="space-y-3">
                   <div className="flex justify-between items-start">
                     <div>
-                      <span className="font-sans text-[10px] text-royal-gold font-bold uppercase tracking-widest">
+                      <span className="font-sans text-[10px] text-royal-purple font-bold uppercase tracking-widest">
                         {proj.category}
                       </span>
                       <h3 className="font-display text-2xl font-black text-gray-900 dark:text-gilded-ivory mt-1">
                         {proj.title}
                       </h3>
                     </div>
-                    <ArrowUpRight className="w-5 h-5 text-gray-400 group-hover:text-royal-gold transition-colors" />
+                    <ArrowUpRight className="w-5 h-5 text-gray-400 group-hover:text-royal-purple transition-colors" />
                   </div>
 
                   <p className="font-sans text-sm text-gray-600 dark:text-gray-400 line-clamp-2">
@@ -283,10 +283,10 @@ export default function Portfolio() {
 
                   <div className="flex gap-4 pt-4 mt-4 border-t border-royal-gold/10 text-[10px] font-sans">
                     <div className="flex items-center gap-1.5 text-gray-500 dark:text-gray-400">
-                      <span className="font-bold text-royal-gold/80 uppercase">Client:</span> {proj.client}
+                      <span className="font-bold text-royal-purple/80 uppercase">Client:</span> {proj.client}
                     </div>
                     <div className="flex items-center gap-1.5 text-gray-500 dark:text-gray-400">
-                      <span className="font-bold text-royal-gold/80 uppercase">Year:</span> {proj.year}
+                      <span className="font-bold text-royal-purple/80 uppercase">Year:</span> {proj.year}
                     </div>
                   </div>
                 </div>

@@ -39,6 +39,11 @@ html.dark {
   --color-off-white: #fcf8f9;
 }
 
+/* Map text-royal-gold as well so all text accents render light purple while keeping borders gold */
+.text-royal-gold {
+  color: var(--royal-purple-color) !important;
+}
+
 @layer utilities {
   .film-grain {
     pointer-events: none;

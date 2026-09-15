@@ -34,7 +34,7 @@ export default function TrustedByMarquee() {
           {PARTNERS.map((partner, index) => (
             <span 
               key={`partner-1-${index}`} 
-              className="mx-8 md:mx-16 font-display font-bold text-2xl md:text-3xl text-gray-400 dark:text-gray-600 opacity-50 hover:opacity-100 hover:text-royal-gold dark:hover:text-royal-gold transition-all duration-300 cursor-default"
+              className="mx-8 md:mx-16 font-display font-bold text-2xl md:text-3xl text-gray-400 dark:text-gray-600 opacity-50 hover:opacity-100 hover:text-royal-purple dark:hover:text-royal-purple transition-all duration-300 cursor-default"
             >
               {partner}
             </span>
@@ -49,7 +49,7 @@ export default function TrustedByMarquee() {
           {PARTNERS.map((partner, index) => (
             <span 
               key={`partner-2-${index}`} 
-              className="mx-8 md:mx-16 font-display font-bold text-2xl md:text-3xl text-gray-400 dark:text-gray-600 opacity-50 hover:opacity-100 hover:text-royal-gold dark:hover:text-royal-gold transition-all duration-300 cursor-default"
+              className="mx-8 md:mx-16 font-display font-bold text-2xl md:text-3xl text-gray-400 dark:text-gray-600 opacity-50 hover:opacity-100 hover:text-royal-purple dark:hover:text-royal-purple transition-all duration-300 cursor-default"
             >
               {partner}
             </span>

@@ -188,7 +188,7 @@ export default function ServicesPage({ onNavigateToContact }: ServicesPageProps)
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="font-sans text-xs md:text-sm text-royal-gold font-bold tracking-[0.25em] h-fit block uppercase py-1"
+            className="font-sans text-xs md:text-sm text-royal-purple font-bold tracking-[0.25em] h-fit block uppercase py-1"
           >
             The Digital Arsenal
           </motion.span>
@@ -198,7 +198,7 @@ export default function ServicesPage({ onNavigateToContact }: ServicesPageProps)
             transition={{ duration: 0.7, delay: 0.15 }}
             className="font-display text-4xl sm:text-5xl md:text-6.5xl lg:text-7.5xl font-black text-gray-950 dark:text-gilded-ivory leading-tight"
           >
-            Creative Services for the <span className="text-royal-gold italic font-serif">Digital Elite.</span>
+            Creative Services for the <span className="text-royal-purple italic font-serif">Digital Elite.</span>
           </motion.h1>
           <motion.p 
             initial={{ opacity: 0, y: 20 }}
@@ -226,7 +226,7 @@ export default function ServicesPage({ onNavigateToContact }: ServicesPageProps)
                 const estimatorEl = document.getElementById('deliverables-estimator');
                 if (estimatorEl) estimatorEl.scrollIntoView({ behavior: 'smooth' });
               }}
-              className="border border-royal-gold/40 text-royal-gold px-8 py-4.5 rounded-2xl font-sans text-xs font-bold uppercase tracking-wider backdrop-blur-sm hover:bg-royal-gold/5 transition-all active:scale-95 cursor-pointer"
+              className="border border-royal-gold/40 text-royal-purple px-8 py-4.5 rounded-2xl font-sans text-xs font-bold uppercase tracking-wider backdrop-blur-sm hover:bg-royal-gold/5 transition-all active:scale-95 cursor-pointer"
             >
               Configure Scope Scope
             </button>
@@ -238,7 +238,7 @@ export default function ServicesPage({ onNavigateToContact }: ServicesPageProps)
           animate={{ y: [0, 8, 0] }}
           transition={{ repeat: Infinity, duration: 1.8 }}
           onClick={scrollToCapabilities}
-          className="absolute bottom-10 left-1/2 -translate-x-1/2 cursor-pointer text-royal-gold/70 hover:text-royal-gold flex flex-col items-center gap-2"
+          className="absolute bottom-10 left-1/2 -translate-x-1/2 cursor-pointer text-royal-purple/70 hover:text-royal-purple flex flex-col items-center gap-2"
           title="Scroll downwards"
         >
           <span className="font-sans text-[9px] uppercase tracking-[0.2em] font-bold">Discover</span>
@@ -262,7 +262,7 @@ export default function ServicesPage({ onNavigateToContact }: ServicesPageProps)
           
           <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
             <div className="max-w-xl text-left">
-              <span className="text-royal-gold text-xs font-bold uppercase tracking-widest block mb-2">Graphic Design &amp; Branding</span>
+              <span className="text-royal-purple text-xs font-bold uppercase tracking-widest block mb-2">Graphic Design &amp; Branding</span>
               <h2 className="font-display text-3xl md:text-5xl font-black text-gray-950 dark:text-gilded-ivory leading-tight">
                 Identity &amp; Visual Strategy
               </h2>
@@ -270,7 +270,7 @@ export default function ServicesPage({ onNavigateToContact }: ServicesPageProps)
                 We don't just design logos; we build legacy. Our aesthetic is rooted in minimal luxury, classical Swiss grid alignments, and functional elegance.
               </p>
             </div>
-            <div className="font-display text-4xl font-black text-royal-gold/10 uppercase tracking-widest hidden md:block select-none">
+            <div className="font-display text-4xl font-black text-royal-purple/10 uppercase tracking-widest hidden md:block select-none">
               DESIGN
             </div>
           </div>
@@ -365,7 +365,7 @@ export default function ServicesPage({ onNavigateToContact }: ServicesPageProps)
           
           {/* Header */}
           <div className="text-center mb-16 space-y-4 max-w-2xl mx-auto">
-            <span className="font-sans text-xs text-royal-gold font-semibold uppercase tracking-widest block">Video &amp; Social</span>
+            <span className="font-sans text-xs text-royal-purple font-semibold uppercase tracking-widest block">Video &amp; Social</span>
             <h2 className="font-display text-3xl md:text-5xl font-black text-gray-950 dark:text-gilded-ivory">
               Content Kineticism
             </h2>
@@ -436,7 +436,7 @@ export default function ServicesPage({ onNavigateToContact }: ServicesPageProps)
               </AnimatePresence>
               
               <div className="relative z-20 p-8 space-y-2 pointer-events-none select-none">
-                <span className="font-sans text-[10px] text-royal-gold font-bold uppercase tracking-widest block">CREATIVE MOTION</span>
+                <span className="font-sans text-[10px] text-royal-purple font-bold uppercase tracking-widest block">CREATIVE MOTION</span>
                 <h3 className="font-display text-2xl font-black text-gilded-ivory">Reels &amp; Short Form</h3>
                 <p className="font-sans text-xs text-gray-300 max-w-md">
                   Viral-optimized, highly curated narrative pacing that secures instant client capture and retention metrics.
@@ -497,7 +497,7 @@ export default function ServicesPage({ onNavigateToContact }: ServicesPageProps)
               </AnimatePresence>
               
               <div className="relative z-20 p-8 space-y-2 pointer-events-none select-none">
-                <span className="font-sans text-[10px] text-royal-gold font-bold uppercase tracking-widest block">AUDITORY ART</span>
+                <span className="font-sans text-[10px] text-royal-purple font-bold uppercase tracking-widest block">AUDITORY ART</span>
                 <h3 className="font-display text-2xl font-black text-gilded-ivory">Voice-Over Production</h3>
                 <p className="font-sans text-xs text-gray-300">
                   Commanding, authoritative vocal narratives delivered by prestige speakers to guide global legacy campaigns.
@@ -558,7 +558,7 @@ export default function ServicesPage({ onNavigateToContact }: ServicesPageProps)
               </AnimatePresence>
               
               <div className="relative z-20 p-8 space-y-2 pointer-events-none select-none">
-                <span className="font-sans text-[10px] text-royal-gold font-bold uppercase tracking-widest block">ENGAGEMENT ARCHITECTURE</span>
+                <span className="font-sans text-[10px] text-royal-purple font-bold uppercase tracking-widest block">ENGAGEMENT ARCHITECTURE</span>
                 <h3 className="font-display text-2xl font-black text-gilded-ivory">Social Architecture</h3>
                 <p className="font-sans text-xs text-gray-300 max-w-md">
                   Formulating high-concept editorial profiles and systematic algorithm optimizations to sustain high executive presence.
@@ -590,7 +590,7 @@ export default function ServicesPage({ onNavigateToContact }: ServicesPageProps)
               <div className="p-8 md:p-12 relative z-10 bg-gray-50/50 dark:bg-zinc-950 rounded-3xl border border-royal-gold/20 shadow-xl space-y-8">
                 
                 <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 rounded-2xl bg-royal-gold/10 text-royal-gold flex items-center justify-center border border-royal-gold/15 shrink-0">
+                  <div className="w-12 h-12 rounded-2xl bg-royal-gold/10 text-royal-purple flex items-center justify-center border border-royal-gold/15 shrink-0">
                     <Mail className="w-6 h-6" />
                   </div>
                   <div>
@@ -612,7 +612,7 @@ export default function ServicesPage({ onNavigateToContact }: ServicesPageProps)
                     <span className="font-sans text-[10px] uppercase font-bold tracking-widest block opacity-90">Deliverability</span>
                   </div>
                   <div className="p-4 border border-royal-gold/15 dark:bg-black/20 rounded-2xl text-center space-y-1">
-                    <strong className="text-2xl md:text-3xl font-display font-black text-royal-gold block leading-none">34%</strong>
+                    <strong className="text-2xl md:text-3xl font-display font-black text-royal-purple block leading-none">34%</strong>
                     <span className="font-sans text-[10px] uppercase font-bold tracking-widest block text-gray-400">Avg. Open Rate</span>
                   </div>
                 </div>
@@ -622,10 +622,10 @@ export default function ServicesPage({ onNavigateToContact }: ServicesPageProps)
 
             {/* Right Text */}
             <div className="order-1 lg:order-2 space-y-8">
-              <span className="text-royal-gold font-sans text-xs font-bold uppercase tracking-widest block">The Direct Channel</span>
+              <span className="text-royal-purple font-sans text-xs font-bold uppercase tracking-widest block">The Direct Channel</span>
               <h2 className="font-display text-4xl sm:text-5xl font-black leading-tight">
                 Revenue via <br/>
-                <span className="text-royal-gold italic font-serif">Precision Mailing.</span>
+                <span className="text-royal-purple italic font-serif">Precision Mailing.</span>
               </h2>
               <p className="font-sans text-xs md:text-sm text-gray-500 dark:text-gray-400 leading-relaxed">
                 Email is not dead; it's simply evolved. We author customized automated lifecycles that convert prospects into loyal brand patrons without introducing visual compromises or low-key styling noise.
@@ -633,15 +633,15 @@ export default function ServicesPage({ onNavigateToContact }: ServicesPageProps)
 
               <ul className="space-y-4 text-xs md:text-sm text-gray-700 dark:text-gray-300">
                 <li className="flex items-center gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-royal-gold shrink-0" />
+                  <CheckCircle2 className="w-5 h-5 text-royal-purple shrink-0" />
                   <span>Hyper-segmented corporate audience arrays.</span>
                 </li>
                 <li className="flex items-center gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-royal-gold shrink-0" />
+                  <CheckCircle2 className="w-5 h-5 text-royal-purple shrink-0" />
                   <span>A/B metric splits for absolute maximum conversion.</span>
                 </li>
                 <li className="flex items-center gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-royal-gold shrink-0" />
+                  <CheckCircle2 className="w-5 h-5 text-royal-purple shrink-0" />
                   <span>Custom-coded clean HTML layouts mirroring editorial proportions.</span>
                 </li>
               </ul>
@@ -663,7 +663,7 @@ export default function ServicesPage({ onNavigateToContact }: ServicesPageProps)
         <div className="bg-white/90 dark:bg-zinc-950/40 border border-royal-gold/25 rounded-[36px] xl:p-12 p-6 md:p-8 shadow-2xl space-y-10 text-left">
           
           <div className="max-w-2xl text-left pb-6 border-b border-royal-gold/10">
-            <span className="font-sans text-xs text-royal-gold font-semibold uppercase tracking-[0.2em] block mb-2">
+            <span className="font-sans text-xs text-royal-purple font-semibold uppercase tracking-[0.2em] block mb-2">
               Sovereign Utility Suite
             </span>
             <h2 className="font-display text-3xl md:text-4xl font-black text-gray-900 dark:text-gilded-ivory">
@@ -678,7 +678,7 @@ export default function ServicesPage({ onNavigateToContact }: ServicesPageProps)
             
             {/* Left selectors list */}
             <div className="lg:col-span-7 space-y-3.5">
-              <span className="font-sans text-xs font-bold text-royal-gold uppercase tracking-widest pl-1">
+              <span className="font-sans text-xs font-bold text-royal-purple uppercase tracking-widest pl-1">
                 Customize Deliverables Blueprint
               </span>
               <div className="space-y-3 mt-1">
@@ -700,7 +700,7 @@ export default function ServicesPage({ onNavigateToContact }: ServicesPageProps)
                           type="checkbox"
                           checked={isChecked}
                           onChange={() => {}} // Manage via button click only
-                          className="w-4.5 h-4.5 text-royal-gold accent-royal-gold focus:ring-royal-gold-25 rounded bg-transparent border-royal-gold/30 cursor-pointer" 
+                          className="w-4.5 h-4.5 text-royal-purple accent-royal-gold focus:ring-royal-gold-25 rounded bg-transparent border-royal-gold/30 cursor-pointer" 
                         />
                       </div>
                       <div className="space-y-1 text-left">
@@ -708,7 +708,7 @@ export default function ServicesPage({ onNavigateToContact }: ServicesPageProps)
                           <h4 className="font-sans text-xs md:text-sm font-bold text-gray-950 dark:text-gilded-ivory">
                             {opt.name}
                           </h4>
-                          <span className="font-sans text-[8px] md:text-[9px] bg-royal-gold/15 text-royal-gold px-2.5 py-0.5 rounded-full border border-royal-gold/10 uppercase tracking-widest font-semibold leading-tight">
+                          <span className="font-sans text-[8px] md:text-[9px] bg-royal-gold/15 text-royal-purple px-2.5 py-0.5 rounded-full border border-royal-gold/10 uppercase tracking-widest font-semibold leading-tight">
                             {opt.category}
                           </span>
                         </div>
@@ -726,7 +726,7 @@ export default function ServicesPage({ onNavigateToContact }: ServicesPageProps)
             <div className="lg:col-span-5 sticky top-28 bg-[#fafaf9] dark:bg-zinc-950 p-8 rounded-[28px] border border-royal-gold/20 flex flex-col justify-between min-h-[420px]">
               
               <div className="space-y-8 text-left">
-                <div className="flex items-center gap-2 text-royal-gold pb-4 border-b border-royal-gold/10">
+                <div className="flex items-center gap-2 text-royal-purple pb-4 border-b border-royal-gold/10">
                   <Sparkles className="w-5 h-5" />
                   <span className="font-sans text-xs font-bold uppercase tracking-widest flex items-center gap-1.5">
                     Live Formulation Metrics
@@ -738,7 +738,7 @@ export default function ServicesPage({ onNavigateToContact }: ServicesPageProps)
                     <span className="font-sans text-[10px] text-gray-400 uppercase tracking-wider block">
                       Legacy Stature Tier
                     </span>
-                    <strong className="font-display text-2xl font-black text-royal-gold block mt-1 leading-none">
+                    <strong className="font-display text-2xl font-black text-royal-purple block mt-1 leading-none">
                       {metrics.tier}
                     </strong>
                     <p className="font-sans text-[11px] md:text-xs text-gray-500 dark:text-gray-400 mt-2 leading-relaxed">
@@ -800,7 +800,7 @@ export default function ServicesPage({ onNavigateToContact }: ServicesPageProps)
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_rgba(212,175,55,0.1)_0%,_transparent_65%)] pointer-events-none z-0" />
           
           <div className="relative z-10 space-y-8 max-w-2xl mx-auto">
-            <span className="font-sans text-xs text-royal-gold font-semibold uppercase tracking-widest block">
+            <span className="font-sans text-xs text-royal-purple font-semibold uppercase tracking-widest block">
               Direct Engagement Gateway
             </span>
             <h2 className="font-display text-4xl md:text-5xl font-black text-gilded-ivory leading-tight">

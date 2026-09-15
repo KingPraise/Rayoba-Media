@@ -38,14 +38,14 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
           {/* Close Button */}
           <button
             onClick={onClose}
-            className="absolute top-6 right-6 p-2 rounded-full bg-midnight-royal/80 hover:bg-midnight-royal text-royal-gold border border-royal-gold/25 hover:scale-105 active:scale-95 transition-all cursor-pointer shadow-lg"
+            className="absolute top-6 right-6 p-2 rounded-full bg-midnight-royal/80 hover:bg-midnight-royal text-royal-purple border border-royal-gold/25 hover:scale-105 active:scale-95 transition-all cursor-pointer shadow-lg"
             title="Close Case Study"
           >
             <X className="w-5 h-5" />
           </button>
 
           <div className="absolute bottom-6 left-6 right-6">
-            <span className="font-sans text-[10px] text-royal-gold font-bold uppercase tracking-[0.2em] bg-midnight-royal/85 px-3 py-1.5 rounded-full border border-royal-gold/20 inline-block shadow">
+            <span className="font-sans text-[10px] text-royal-purple font-bold uppercase tracking-[0.2em] bg-midnight-royal/85 px-3 py-1.5 rounded-full border border-royal-gold/20 inline-block shadow">
               {project.tag || 'CASE STUDY'}
             </span>
             <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-black text-gilded-ivory tracking-tight mt-3">
@@ -60,7 +60,7 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
           {/* Left side details */}
           <div className="md:col-span-8 space-y-8">
             <div className="space-y-4">
-              <div className="flex items-center gap-2 text-royal-gold">
+              <div className="flex items-center gap-2 text-royal-purple">
                 <Target className="w-4 h-4 stroke-[1.5]" />
                 <span className="font-sans text-xs font-bold uppercase tracking-wider">Project Narrative</span>
               </div>
@@ -72,14 +72,14 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
             {/* Objectives list */}
             {project.objectives && project.objectives.length > 0 && (
               <div className="space-y-4 pt-2">
-                <div className="flex items-center gap-2 text-royal-gold">
+                <div className="flex items-center gap-2 text-royal-purple">
                   <Landmark className="w-4 h-4 stroke-[1.5]" />
                   <span className="font-sans text-xs font-bold uppercase tracking-wider">The Strategic Mandate</span>
                 </div>
                 <div className="space-y-3">
                   {project.objectives.map((obj, idx) => (
                     <div key={idx} className="flex items-start gap-3.5 text-xs md:text-sm text-gray-600 dark:text-gray-400">
-                      <CheckCircle className="w-4.5 h-4.5 text-royal-gold shrink-0 mt-0.5" />
+                      <CheckCircle className="w-4.5 h-4.5 text-royal-purple shrink-0 mt-0.5" />
                       <span>{obj}</span>
                     </div>
                   ))}
@@ -93,7 +93,7 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
             
             {/* Basic Credentials Metadata */}
             <div className="space-y-5">
-              <h3 className="font-sans text-xs font-bold text-royal-gold uppercase tracking-widest pb-3 border-b border-royal-gold/10">
+              <h3 className="font-sans text-xs font-bold text-royal-purple uppercase tracking-widest pb-3 border-b border-royal-gold/10">
                 Credentials
               </h3>
               <div className="space-y-4 text-xs font-sans text-gray-600 dark:text-gray-400 text-left">
@@ -115,13 +115,13 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
             {/* Metrics Deliverables */}
             {project.metrics && project.metrics.length > 0 && (
               <div className="space-y-4 pt-4 border-t border-royal-gold/10">
-                <h3 className="font-sans text-xs font-bold text-royal-gold uppercase tracking-widest inline-flex items-center gap-1.5 pb-1">
+                <h3 className="font-sans text-xs font-bold text-royal-purple uppercase tracking-widest inline-flex items-center gap-1.5 pb-1">
                   <TrendingUp className="w-3.5 h-3.5" /> Key Benchmarks
                 </h3>
                 <ul className="space-y-3 text-xs md:text-xs text-gray-700 dark:text-gray-300">
                   {project.metrics.map((met, idx) => (
                     <li key={idx} className="flex items-start gap-2.5">
-                      <span className="text-royal-gold mt-1">•</span>
+                      <span className="text-royal-purple mt-1">•</span>
                       <span className="leading-relaxed">{met}</span>
                     </li>
                   ))}
@@ -131,7 +131,7 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
 
             {project.deliverables && project.deliverables.length > 0 && (
               <div className="space-y-4 pt-4 border-t border-royal-gold/10">
-                <h3 className="font-sans text-xs font-bold text-royal-gold uppercase tracking-widest inline-flex items-center gap-1.5 pb-1">
+                <h3 className="font-sans text-xs font-bold text-royal-purple uppercase tracking-widest inline-flex items-center gap-1.5 pb-1">
                   <Sparkles className="w-3.5 h-3.5" /> Deliverables
                 </h3>
                 <div className="flex flex-col gap-2.5">

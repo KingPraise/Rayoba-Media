@@ -99,11 +99,11 @@ export default function PortfolioPage({ onNavigateToPage }: Props) {
 
       {/* Page Header */}
       <section className="max-w-7xl mx-auto px-6 md:px-12 w-full mt-8 md:mt-16 text-center">
-        <span className="font-sans text-xs md:text-sm text-royal-gold font-semibold tracking-[0.2em] mb-4 block uppercase p-1">
+        <span className="font-sans text-xs md:text-sm text-royal-purple font-semibold tracking-[0.2em] mb-4 block uppercase p-1">
           Case Studies
         </span>
         <h1 className="font-display text-4xl sm:text-5xl lg:text-7.5xl font-black text-gray-900 dark:text-gilded-ivory leading-tight mb-6">
-          Curated <span className="text-royal-gold">Masterpieces</span>
+          Curated <span className="text-royal-purple">Masterpieces</span>
         </h1>
         <p className="font-sans text-base md:text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto leading-relaxed">
           Our work speaks for itself. We merge editorial luxury with technical precision to build digital experiences that define industry standards.
@@ -112,7 +112,7 @@ export default function PortfolioPage({ onNavigateToPage }: Props) {
         {/* Scroll To Explore indicator */}
         <div className="flex justify-center items-center space-x-6 mt-12 mb-16">
           <div className="h-[1px] w-12 bg-royal-gold/40 dark:bg-royal-gold/25" />
-          <span className="font-sans text-xs tracking-[0.2em] uppercase text-royal-gold font-semibold">Scroll to Explore</span>
+          <span className="font-sans text-xs tracking-[0.2em] uppercase text-royal-purple font-semibold">Scroll to Explore</span>
           <div className="h-[1px] w-12 bg-royal-gold/40 dark:bg-royal-gold/25" />
         </div>
       </section>
@@ -120,7 +120,7 @@ export default function PortfolioPage({ onNavigateToPage }: Props) {
       {/* Categories Filter Block */}
       <section className="max-w-7xl mx-auto px-6 md:px-12 w-full mb-12">
         <div className="flex flex-wrap items-center justify-center gap-3 border-b border-royal-gold/10 pb-8 text-center">
-          <div className="flex items-center gap-2 text-royal-gold mr-3">
+          <div className="flex items-center gap-2 text-royal-purple mr-3">
             <Filter className="w-4 h-4 stroke-[1.5]" />
             <span className="font-sans text-xs font-bold uppercase tracking-widest">Filter Archives</span>
           </div>
@@ -185,14 +185,14 @@ export default function PortfolioPage({ onNavigateToPage }: Props) {
                     <div className="p-8 space-y-4">
                       <div className="flex justify-between items-start gap-3">
                         <div>
-                          <span className="font-sans text-[10px] text-royal-gold font-bold uppercase tracking-wider block">
+                          <span className="font-sans text-[10px] text-royal-purple font-bold uppercase tracking-wider block">
                             {proj.category}
                           </span>
-                          <h3 className="font-display text-2xl font-black text-gray-950 dark:text-gilded-ivory mt-1 group-hover:text-royal-gold transition-colors">
+                          <h3 className="font-display text-2xl font-black text-gray-950 dark:text-gilded-ivory mt-1 group-hover:text-royal-purple transition-colors">
                             {proj.title}
                           </h3>
                         </div>
-                        <div className="p-2.5 bg-royal-gold/10 rounded-full text-royal-gold group-hover:bg-royal-gold group-hover:text-deep-violet transition-colors duration-300 shrink-0">
+                        <div className="p-2.5 bg-royal-gold/10 rounded-full text-royal-purple group-hover:bg-royal-gold group-hover:text-deep-violet transition-colors duration-300 shrink-0">
                           <ArrowUpRight className="w-4 h-4" />
                         </div>
                       </div>
@@ -202,7 +202,7 @@ export default function PortfolioPage({ onNavigateToPage }: Props) {
                       </p>
 
                       <div className="flex justify-between items-center text-[10px] font-sans text-gray-400 pt-5 border-t border-royal-gold/10">
-                        <span className="font-semibold text-royal-gold/80 uppercase tracking-wider">Client: {proj.client}</span>
+                        <span className="font-semibold text-royal-purple/80 uppercase tracking-wider">Client: {proj.client}</span>
                         <span>Year: {proj.year}</span>
                       </div>
                     </div>
@@ -237,7 +237,7 @@ export default function PortfolioPage({ onNavigateToPage }: Props) {
                         <div className="absolute inset-0 bg-gradient-to-t from-midnight-royal/40 via-transparent to-transparent opacity-60 group-hover:opacity-30 transition-opacity" />
                         {/* Hover zoom hint */}
                         <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                          <div className="bg-midnight-royal/70 backdrop-blur-sm text-royal-gold text-[10px] font-bold uppercase tracking-widest px-4 py-2 rounded-full border border-royal-gold/30">
+                          <div className="bg-midnight-royal/70 backdrop-blur-sm text-royal-purple text-[10px] font-bold uppercase tracking-widest px-4 py-2 rounded-full border border-royal-gold/30">
                             View Full Size
                           </div>
                         </div>
@@ -286,7 +286,7 @@ export default function PortfolioPage({ onNavigateToPage }: Props) {
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-midnight-royal/40 via-transparent to-transparent opacity-60 group-hover:opacity-30 transition-opacity" />
                         <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                          <div className="bg-midnight-royal/70 backdrop-blur-sm text-royal-gold text-[10px] font-bold uppercase tracking-widest px-4 py-2 rounded-full border border-royal-gold/30">
+                          <div className="bg-midnight-royal/70 backdrop-blur-sm text-royal-purple text-[10px] font-bold uppercase tracking-widest px-4 py-2 rounded-full border border-royal-gold/30">
                             View Full Size
                           </div>
                         </div>
@@ -335,7 +335,7 @@ export default function PortfolioPage({ onNavigateToPage }: Props) {
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-midnight-royal/40 via-transparent to-transparent opacity-60 group-hover:opacity-30 transition-opacity" />
                         <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                          <div className="bg-midnight-royal/70 backdrop-blur-sm text-royal-gold text-[10px] font-bold uppercase tracking-widest px-4 py-2 rounded-full border border-royal-gold/30">
+                          <div className="bg-midnight-royal/70 backdrop-blur-sm text-royal-purple text-[10px] font-bold uppercase tracking-widest px-4 py-2 rounded-full border border-royal-gold/30">
                             View Full Size
                           </div>
                         </div>
@@ -368,7 +368,7 @@ export default function PortfolioPage({ onNavigateToPage }: Props) {
 
         {/* Scrollytelling Section Intro Text */}
         <div className="max-w-7xl mx-auto px-6 md:px-12 text-center mb-20">
-          <span className="font-sans text-xs text-royal-gold font-semibold uppercase tracking-widest block mb-2">
+          <span className="font-sans text-xs text-royal-purple font-semibold uppercase tracking-widest block mb-2">
             Dynamic Chronology
           </span>
           <h2 className="font-display text-3xl md:text-5xl font-black text-gray-900 dark:text-gilded-ivory">
@@ -382,7 +382,7 @@ export default function PortfolioPage({ onNavigateToPage }: Props) {
         {/* Project A: Structural Excellence */}
         <div className="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 lg:grid-cols-12 items-center gap-12 lg:gap-16 min-h-screen py-12 relative z-10 border-b border-royal-gold/10">
           <div className="lg:col-span-6 text-left space-y-6">
-            <span className="font-sans text-xs md:text-sm text-royal-gold font-bold uppercase tracking-widest">
+            <span className="font-sans text-xs md:text-sm text-royal-purple font-bold uppercase tracking-widest">
               Case Study 01
             </span>
             <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-black text-gray-950 dark:text-gilded-ivory leading-tight">
@@ -441,7 +441,7 @@ export default function PortfolioPage({ onNavigateToPage }: Props) {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-midnight-royal/40 via-transparent to-transparent pointer-events-none" />
               <div className="absolute bottom-6 left-6 right-6 text-left">
-                <span className="font-sans text-[9px] font-bold text-royal-gold uppercase tracking-widest bg-midnight-royal/85 px-3 py-1.5 rounded-full border border-royal-gold/20 inline-block shadow">
+                <span className="font-sans text-[9px] font-bold text-royal-purple uppercase tracking-widest bg-midnight-royal/85 px-3 py-1.5 rounded-full border border-royal-gold/20 inline-block shadow">
                   Case Detail 01
                 </span>
                 <p className="font-sans text-xs text-gilded-ivory mt-2 font-semibold">
@@ -455,7 +455,7 @@ export default function PortfolioPage({ onNavigateToPage }: Props) {
         {/* Project B: Digital Fortress */}
         <div className="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 lg:grid-cols-12 items-center gap-12 lg:gap-16 min-h-screen py-12 relative z-10">
           <div className="lg:col-span-6 lg:order-2 text-left lg:text-right space-y-6">
-            <span className="font-sans text-xs md:text-sm text-royal-gold font-bold uppercase tracking-widest">
+            <span className="font-sans text-xs md:text-sm text-royal-purple font-bold uppercase tracking-widest">
               Case Study 02
             </span>
             <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-black text-gray-950 dark:text-gilded-ivory leading-tight">
@@ -514,7 +514,7 @@ export default function PortfolioPage({ onNavigateToPage }: Props) {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-midnight-royal/40 via-transparent to-transparent pointer-events-none" />
               <div className="absolute bottom-6 left-6 right-6 text-left">
-                <span className="font-sans text-[9px] font-bold text-royal-gold uppercase tracking-widest bg-midnight-royal/85 px-3 py-1.5 rounded-full border border-royal-gold/20 inline-block shadow">
+                <span className="font-sans text-[9px] font-bold text-royal-purple uppercase tracking-widest bg-midnight-royal/85 px-3 py-1.5 rounded-full border border-royal-gold/20 inline-block shadow">
                   Case Detail 02
                 </span>
                 <p className="font-sans text-xs text-gilded-ivory mt-2 font-semibold">
@@ -530,11 +530,11 @@ export default function PortfolioPage({ onNavigateToPage }: Props) {
       {/* Video Showcase (Masonry Video Reels Grid) */}
       <section className="max-w-7xl mx-auto px-6 md:px-12 w-full mb-16 text-left">
         <div className="mb-16 text-center max-w-2xl mx-auto">
-          <span className="font-sans text-xs text-royal-gold font-semibold uppercase tracking-widest block mb-2">
+          <span className="font-sans text-xs text-royal-purple font-semibold uppercase tracking-widest block mb-2">
             Cinematic Motion Gallery
           </span>
           <h2 className="font-display text-3xl md:text-5xl font-black text-gray-900 dark:text-gilded-ivory">
-            Works in <span className="text-royal-gold italic font-serif">Motion</span>
+            Works in <span className="text-royal-purple italic font-serif">Motion</span>
           </h2>
           <p className="font-sans text-xs md:text-sm text-gray-500 dark:text-gray-400 mt-2">
             Capturing the pulse and sovereign momentum of luxury properties through precise speed direction. Click any reel to summon active cinematic narration.
@@ -569,7 +569,7 @@ export default function PortfolioPage({ onNavigateToPage }: Props) {
 
               {/* Informational overlay tags */}
               <div className="relative z-10 p-6 space-y-2 mt-auto text-left">
-                <span className="font-sans text-[9px] font-bold text-royal-gold uppercase tracking-widest block">
+                <span className="font-sans text-[9px] font-bold text-royal-purple uppercase tracking-widest block">
                   {reel.category}
                 </span>
                 <h4 className="font-display text-lg font-black text-gilded-ivory">
@@ -645,7 +645,7 @@ export default function PortfolioPage({ onNavigateToPage }: Props) {
                 {/* Close modal */}
                 <button
                   onClick={() => setActiveReel(null)}
-                  className="absolute top-6 right-6 p-2 rounded-full bg-midnight-royal/80 hover:bg-midnight-royal text-royal-gold border border-royal-gold/25 hover:scale-105 active:scale-95 transition-all cursor-pointer z-20 shadow-lg"
+                  className="absolute top-6 right-6 p-2 rounded-full bg-midnight-royal/80 hover:bg-midnight-royal text-royal-purple border border-royal-gold/25 hover:scale-105 active:scale-95 transition-all cursor-pointer z-20 shadow-lg"
                   title="Close Showroom"
                 >
                   <X className="w-5 h-5" />
@@ -656,7 +656,7 @@ export default function PortfolioPage({ onNavigateToPage }: Props) {
               <div className="p-8 space-y-4 text-left bg-midnight-royal">
                 <div className="flex flex-wrap items-center justify-between gap-4">
                   <div className="space-y-1">
-                    <span className="font-sans text-[10px] text-royal-gold font-bold uppercase tracking-widest bg-royal-gold/10 px-2.5 py-1 rounded-full border border-royal-gold/10 inline-block">
+                    <span className="font-sans text-[10px] text-royal-purple font-bold uppercase tracking-widest bg-royal-gold/10 px-2.5 py-1 rounded-full border border-royal-gold/10 inline-block">
                       {activeReel.category}
                     </span>
                     <h3 className="font-display text-2xl md:text-3xl font-black text-gilded-ivory">
@@ -664,7 +664,7 @@ export default function PortfolioPage({ onNavigateToPage }: Props) {
                     </h3>
                   </div>
                   <div className="flex items-center gap-1.5 text-xs text-gray-400">
-                    <Film className="w-4 h-4 text-royal-gold" />
+                    <Film className="w-4 h-4 text-royal-purple" />
                     <span>Resolution: 4K Cinematic Master</span>
                   </div>
                 </div>
@@ -674,7 +674,7 @@ export default function PortfolioPage({ onNavigateToPage }: Props) {
                 </p>
 
                 <div className="pt-4 border-t border-royal-gold/10 flex items-center justify-between text-[11px] font-sans text-gray-500">
-                  <span className="italic flex items-center gap-1 text-royal-gold font-medium">
+                  <span className="italic flex items-center gap-1 text-royal-purple font-medium">
                     <Sparkles className="w-3.5 h-3.5" /> High Direction and Speed Scoring
                   </span>
                   <span>Est. Duration: Real-time loop</span>
@@ -714,7 +714,7 @@ export default function PortfolioPage({ onNavigateToPage }: Props) {
               />
               <button
                 onClick={() => setLightboxImage(null)}
-                className="absolute top-4 right-4 p-2 rounded-full bg-midnight-royal/80 text-royal-gold border border-royal-gold/30 hover:bg-royal-gold hover:text-deep-violet transition-all backdrop-blur-sm"
+                className="absolute top-4 right-4 p-2 rounded-full bg-midnight-royal/80 text-royal-purple border border-royal-gold/30 hover:bg-royal-gold hover:text-deep-violet transition-all backdrop-blur-sm"
                 aria-label="Close"
               >
                 <X className="w-5 h-5" />

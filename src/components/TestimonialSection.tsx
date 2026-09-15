@@ -110,7 +110,7 @@ export default function TestimonialSection() {
                   className="w-14 h-14 rounded-full object-cover border-2 border-royal-gold"
                 />
                 <div className="text-left">
-                  <div className="font-sans font-bold text-royal-gold text-lg">{t.name}</div>
+                  <div className="font-sans font-bold text-royal-purple text-lg">{t.name}</div>
                   <div className="font-sans text-xs text-gray-500 dark:text-gray-400 mt-1 uppercase tracking-wider">{t.role}</div>
                 </div>
               </div>
@@ -128,7 +128,7 @@ export default function TestimonialSection() {
         >
           <button 
             onClick={prevTestimonial}
-            className="w-10 h-10 rounded-full border border-royal-gold/30 text-royal-gold hover:bg-royal-gold/10 hover:border-royal-gold flex items-center justify-center transition-all"
+            className="w-10 h-10 rounded-full border border-royal-gold/30 text-royal-purple hover:bg-royal-gold/10 hover:border-royal-gold flex items-center justify-center transition-all"
             aria-label="Previous testimonial"
           >
             <ArrowLeft className="w-5 h-5" />
@@ -147,7 +147,7 @@ export default function TestimonialSection() {
 
           <button 
             onClick={nextTestimonial}
-            className="w-10 h-10 rounded-full border border-royal-gold/30 text-royal-gold hover:bg-royal-gold/10 hover:border-royal-gold flex items-center justify-center transition-all"
+            className="w-10 h-10 rounded-full border border-royal-gold/30 text-royal-purple hover:bg-royal-gold/10 hover:border-royal-gold flex items-center justify-center transition-all"
             aria-label="Next testimonial"
           >
             <ArrowRight className="w-5 h-5" />

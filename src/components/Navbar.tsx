@@ -123,7 +123,7 @@ export default function Navbar({ activePage, onNavigateToPage, onOpenPlanner }: 
             <motion.button
               whileTap={{ scale: 0.95 }}
               onClick={toggleTheme}
-              className="p-2.5 rounded-xl bg-gray-100 hover:bg-gray-200 dark:bg-zinc-900/40 dark:hover:bg-zinc-800/85 border border-transparent dark:border-royal-gold/15 text-royal-gold transition-colors cursor-pointer"
+              className="p-2.5 rounded-xl bg-gray-100 hover:bg-gray-200 dark:bg-zinc-900/40 dark:hover:bg-zinc-800/85 border border-transparent dark:border-royal-gold/15 text-royal-purple transition-colors cursor-pointer"
               title={isDark ? "Switch to Ivory Theme" : "Switch to Shadow Theme"}
               id="theme-toggle-btn"
             >
@@ -142,7 +142,7 @@ export default function Navbar({ activePage, onNavigateToPage, onOpenPlanner }: 
             {/* Mobile Menu Toggle */}
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="md:hidden p-2.5 rounded-xl hover:bg-gray-100 dark:hover:bg-zinc-900 text-royal-gold transition-colors cursor-pointer"
+              className="md:hidden p-2.5 rounded-xl hover:bg-gray-100 dark:hover:bg-zinc-900 text-royal-purple transition-colors cursor-pointer"
               id="mobile-menu-toggle-btn"
             >
               {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
@@ -172,7 +172,7 @@ export default function Navbar({ activePage, onNavigateToPage, onOpenPlanner }: 
                     key={link.page}
                     onClick={() => handleLinkClick(link.page)}
                     className={`w-full text-left py-2.5 font-sans text-sm font-semibold uppercase tracking-wider transition-colors cursor-pointer ${
-                      isActive ? 'text-royal-gold' : 'text-gray-800 dark:text-gray-200 hover:text-royal-gold'
+                      isActive ? 'text-royal-purple' : 'text-gray-800 dark:text-gray-200 hover:text-royal-purple'
                     }`}
                   >
                     {link.name}

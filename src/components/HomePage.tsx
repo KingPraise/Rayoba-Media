@@ -66,7 +66,7 @@ export default function HomePage({ onNavigateToPage }: HomePageProps) {
         <div className="max-w-7xl mx-auto px-6 md:px-12">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
             <div className="lg:col-span-8 space-y-4">
-              <span className="font-sans text-base text-royal-gold font-semibold uppercase tracking-widest">Our Vision</span>
+              <span className="font-sans text-base text-royal-purple font-semibold uppercase tracking-widest">Our Vision</span>
               <h2 className="font-display text-3xl md:text-4xl font-black text-gray-950 dark:text-gilded-ivory max-w-2xl leading-tight">
                 Derived from absolute light & sovereign authority, we help your brand rise.
               </h2>
@@ -108,7 +108,7 @@ export default function HomePage({ onNavigateToPage }: HomePageProps) {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
             onClick={() => onNavigateToPage('services')}
-            className="inline-flex items-center gap-1 text-royal-gold text-xs md:text-sm font-bold uppercase tracking-wider hover:underline"
+            className="inline-flex items-center gap-1 text-royal-purple text-xs md:text-sm font-bold uppercase tracking-wider hover:underline"
           >
             <span>Explore All Services</span>
             <ArrowRight className="w-3.5 h-3.5" />
@@ -139,17 +139,17 @@ export default function HomePage({ onNavigateToPage }: HomePageProps) {
                 className="p-6 rounded-2xl border border-royal-gold/15 bg-white/40 dark:bg-zinc-950/20 hover:border-royal-gold/40 transition-all duration-300 group cursor-pointer flex flex-col justify-between min-h-[220px]"
               >
                 <div className="space-y-4">
-                  <div className="p-3 bg-royal-gold/10 text-royal-gold rounded-xl w-fit group-hover:bg-royal-gold group-hover:text-deep-violet transition-colors">
+                  <div className="p-3 bg-royal-gold/10 text-royal-purple rounded-xl w-fit group-hover:bg-royal-gold group-hover:text-deep-violet transition-colors">
                     <IconComp className="w-5 h-5" />
                   </div>
-                  <h3 className="font-display text-xl font-bold text-gray-950 dark:text-gilded-ivory group-hover:text-royal-gold transition-colors">
+                  <h3 className="font-display text-xl font-bold text-gray-950 dark:text-gilded-ivory group-hover:text-royal-purple transition-colors">
                     {srv.title}
                   </h3>
                   <p className="font-sans text-sm text-gray-500 dark:text-gray-400 leading-relaxed line-clamp-3">
                     {srv.description}
                   </p>
                 </div>
-                <div className="pt-4 flex items-center gap-1.5 text-[10px] uppercase font-bold text-royal-gold opacity-0 group-hover:opacity-100 transition-opacity">
+                <div className="pt-4 flex items-center gap-1.5 text-[10px] uppercase font-bold text-royal-purple opacity-0 group-hover:opacity-100 transition-opacity">
                   <span>Open Spec</span>
                   <ArrowRight className="w-3 h-3" />
                 </div>
@@ -169,7 +169,7 @@ export default function HomePage({ onNavigateToPage }: HomePageProps) {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <span className="font-sans text-xs text-royal-gold font-semibold uppercase tracking-widest">Select Chronicles</span>
+              <span className="font-sans text-xs text-royal-purple font-semibold uppercase tracking-widest">Select Chronicles</span>
               <h2 className="font-display text-3xl md:text-4.5xl font-black text-gray-950 dark:text-gilded-ivory mt-2">
                 Featured Case Studies
               </h2>
@@ -180,7 +180,7 @@ export default function HomePage({ onNavigateToPage }: HomePageProps) {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
               onClick={() => onNavigateToPage('portfolio')}
-              className="inline-flex items-center gap-1 text-royal-gold text-xs md:text-sm font-bold uppercase tracking-wider hover:underline"
+              className="inline-flex items-center gap-1 text-royal-purple text-xs md:text-sm font-bold uppercase tracking-wider hover:underline"
             >
               <span>Browse Full Archives</span>
               <ArrowRight className="w-3.5 h-3.5" />
@@ -209,10 +209,10 @@ export default function HomePage({ onNavigateToPage }: HomePageProps) {
                   <div className="absolute inset-0 bg-gradient-to-t from-midnight-royal/50 to-transparent opacity-80" />
                 </div>
                 <div className="p-8 space-y-3">
-                  <span className="font-sans text-[10px] text-royal-gold font-bold uppercase tracking-wider">
+                  <span className="font-sans text-[10px] text-royal-purple font-bold uppercase tracking-wider">
                     {proj.category}
                   </span>
-                  <h3 className="font-display text-xl md:text-2xl font-black text-gray-950 dark:text-gilded-ivory group-hover:text-royal-gold transition-colors">
+                  <h3 className="font-display text-xl md:text-2xl font-black text-gray-950 dark:text-gilded-ivory group-hover:text-royal-purple transition-colors">
                     {proj.title}
                   </h3>
                   <p className="font-sans text-xs md:text-sm text-gray-600 dark:text-gray-400 leading-relaxed line-clamp-2">

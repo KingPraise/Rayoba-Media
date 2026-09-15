@@ -34,7 +34,7 @@ export default function OriginStory() {
               <motion.div
                 animate={{ rotate: 360 }}
                 transition={{ duration: 45, repeat: Infinity, ease: "linear" }}
-                className="absolute -top-12 -right-12 text-royal-gold/10 pointer-events-none"
+                className="absolute -top-12 -right-12 text-royal-purple/10 pointer-events-none"
               >
                 <Sparkles className="w-48 h-48" />
               </motion.div>
@@ -62,7 +62,7 @@ export default function OriginStory() {
           {/* Right Block: Narrative and Text Details */}
           <div className="lg:col-span-7 flex flex-col justify-center space-y-8 text-left">
             <div className="inline-flex self-start px-4 py-1 rounded-full bg-royal-gold/10 border border-royal-gold/20">
-              <span className="font-sans text-xs text-royal-gold font-semibold tracking-widest uppercase">
+              <span className="font-sans text-xs text-royal-purple font-semibold tracking-widest uppercase">
                 ORIGIN STORY
               </span>
             </div>
@@ -76,7 +76,7 @@ export default function OriginStory() {
                 Derived from the convergence of{' '}
                 <button
                   onClick={() => setActiveTab(activeTab === 'ray' ? 'none' : 'ray')}
-                  className="font-bold text-royal-gold border-b border-dashed border-royal-gold hover:bg-royal-gold/10 px-1 rounded transition-colors cursor-pointer"
+                  className="font-bold text-royal-purple border-b border-dashed border-royal-gold hover:bg-royal-gold/10 px-1 rounded transition-colors cursor-pointer"
                   title="Click to reveal Light significance"
                 >
                   Ray (Light)
@@ -84,7 +84,7 @@ export default function OriginStory() {
                 and{' '}
                 <button
                   onClick={() => setActiveTab(activeTab === 'oba' ? 'none' : 'oba')}
-                  className="font-bold text-royal-gold border-b border-dashed border-royal-gold hover:bg-royal-gold/10 px-1 rounded transition-colors cursor-pointer"
+                  className="font-bold text-royal-purple border-b border-dashed border-royal-gold hover:bg-royal-gold/10 px-1 rounded transition-colors cursor-pointer"
                   title="Click to reveal King significance"
                 >
                   Oba (King in Yoruba)
@@ -110,7 +110,7 @@ export default function OriginStory() {
                 >
                   <button
                     onClick={() => setActiveTab('none')}
-                    className="absolute top-2 right-2 text-royal-gold hover:text-royal-gold/80"
+                    className="absolute top-2 right-2 text-royal-purple hover:text-royal-purple/80"
                     title="Close info"
                   >
                     <X className="w-4 h-4" />
@@ -118,8 +118,8 @@ export default function OriginStory() {
                   
                   {activeTab === 'ray' ? (
                     <div className="space-y-2">
-                      <div className="flex items-center gap-2 text-royal-gold font-bold font-display">
-                        <Sun className="w-5 h-5 text-royal-gold" />
+                      <div className="flex items-center gap-2 text-royal-purple font-bold font-display">
+                        <Sun className="w-5 h-5 text-royal-purple" />
                         <span>Ray — The Principle of Absolute Clarity</span>
                       </div>
                       <p className="text-sm text-gray-700 dark:text-gray-300">
@@ -128,8 +128,8 @@ export default function OriginStory() {
                     </div>
                   ) : (
                     <div className="space-y-2">
-                      <div className="flex items-center gap-2 text-royal-gold font-bold font-display">
-                        <Crown className="w-5 h-5 text-royal-gold" />
+                      <div className="flex items-center gap-2 text-royal-purple font-bold font-display">
+                        <Crown className="w-5 h-5 text-royal-purple" />
                         <span>Oba — The Standard of Sovereign Dominance</span>
                       </div>
                       <p className="text-sm text-gray-700 dark:text-gray-300">
@@ -141,7 +141,7 @@ export default function OriginStory() {
               )}
             </AnimatePresence>
 
-            <div className="flex items-center gap-4 text-royal-gold">
+            <div className="flex items-center gap-4 text-royal-purple">
               <span className="h-px w-12 bg-royal-gold"></span>
               <span className="font-sans text-xs md:text-sm font-semibold tracking-widest uppercase">
                 ESTABLISHED IN EXCELLENCE

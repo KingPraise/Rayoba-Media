@@ -68,7 +68,7 @@ export default function AboutPage() {
         transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
         className="max-w-7xl mx-auto px-6 md:px-12 w-full mt-8 md:mt-16 mb-20 text-left"
       >
-        <span className="font-sans text-xs md:text-sm text-royal-gold font-semibold tracking-[0.2em] mb-4 block uppercase p-1">
+        <span className="font-sans text-xs md:text-sm text-royal-purple font-semibold tracking-[0.2em] mb-4 block uppercase p-1">
           Our Heritage
         </span>
         <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 dark:text-gilded-ivory leading-tight mb-6 max-w-4xl">
@@ -102,7 +102,7 @@ export default function AboutPage() {
                 <motion.div
                   animate={{ rotate: 360 }}
                   transition={{ duration: 45, repeat: Infinity, ease: "linear" }}
-                  className="absolute -top-12 -right-12 text-royal-gold/10 pointer-events-none"
+                  className="absolute -top-12 -right-12 text-royal-purple/10 pointer-events-none"
                 >
                   <Sparkles className="w-48 h-48" />
                 </motion.div>
@@ -130,7 +130,7 @@ export default function AboutPage() {
             {/* Right Block: Narrative and Text Details */}
             <div className="lg:col-span-7 flex flex-col justify-center space-y-8 text-left">
               <div className="inline-flex self-start px-4 py-1.5 rounded-full bg-royal-gold/10 border border-royal-gold/20">
-                <span className="font-sans text-xs text-royal-gold font-semibold tracking-widest uppercase">
+                <span className="font-sans text-xs text-royal-purple font-semibold tracking-widest uppercase">
                   The Etymology
                 </span>
               </div>
@@ -144,7 +144,7 @@ export default function AboutPage() {
                   Derived from the convergence of{' '}
                   <button
                     onClick={() => setActiveTab(activeTab === 'ray' ? 'none' : 'ray')}
-                    className="font-bold text-royal-gold border-b border-dashed border-royal-gold/50 hover:bg-royal-gold/10 px-1 rounded transition-colors cursor-pointer"
+                    className="font-bold text-royal-purple border-b border-dashed border-royal-gold/50 hover:bg-royal-gold/10 px-1 rounded transition-colors cursor-pointer"
                     title="Click to reveal Light significance"
                   >
                     Ray (Light)
@@ -152,7 +152,7 @@ export default function AboutPage() {
                   and{' '}
                   <button
                     onClick={() => setActiveTab(activeTab === 'oba' ? 'none' : 'oba')}
-                    className="font-bold text-royal-gold border-b border-dashed border-royal-gold/50 hover:bg-royal-gold/10 px-1 rounded transition-colors cursor-pointer"
+                    className="font-bold text-royal-purple border-b border-dashed border-royal-gold/50 hover:bg-royal-gold/10 px-1 rounded transition-colors cursor-pointer"
                     title="Click to reveal King significance"
                   >
                     Oba (King in Yoruba)
@@ -178,8 +178,8 @@ export default function AboutPage() {
                   >
                     {activeTab === 'ray' ? (
                       <div className="space-y-2">
-                        <div className="flex items-center gap-2 text-royal-gold font-bold font-display text-sm md:text-base">
-                          <Sun className="w-5 h-5 text-royal-gold" />
+                        <div className="flex items-center gap-2 text-royal-purple font-bold font-display text-sm md:text-base">
+                          <Sun className="w-5 h-5 text-royal-purple" />
                           <span>Ray — The Principle of Absolute Clarity</span>
                         </div>
                         <p className="text-xs md:text-sm text-gray-700 dark:text-gray-300 leading-relaxed">
@@ -188,8 +188,8 @@ export default function AboutPage() {
                       </div>
                     ) : (
                       <div className="space-y-2">
-                        <div className="flex items-center gap-2 text-royal-gold font-bold font-display text-sm md:text-base">
-                          <Crown className="w-5 h-5 text-royal-gold" />
+                        <div className="flex items-center gap-2 text-royal-purple font-bold font-display text-sm md:text-base">
+                          <Crown className="w-5 h-5 text-royal-purple" />
                           <span>Oba — The Standard of Sovereign Dominance</span>
                         </div>
                         <p className="text-xs md:text-sm text-gray-700 dark:text-gray-300 leading-relaxed">
@@ -201,7 +201,7 @@ export default function AboutPage() {
                 )}
               </AnimatePresence>
 
-              <div className="flex items-center gap-4 text-royal-gold">
+              <div className="flex items-center gap-4 text-royal-purple">
                 <span className="h-px w-12 bg-royal-gold"></span>
                 <span className="font-sans text-xs font-semibold tracking-widest uppercase">
                   Est. 2024 • Editorial Stature
@@ -216,7 +216,7 @@ export default function AboutPage() {
       {/* Core Philosophies (The Pillars) */}
       <section className="max-w-7xl mx-auto px-6 md:px-12 w-full mb-28">
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <span className="font-sans text-xs text-royal-gold font-semibold uppercase tracking-widest block mb-4">
+          <span className="font-sans text-xs text-royal-purple font-semibold uppercase tracking-widest block mb-4">
             Our Blueprint
           </span>
           <h2 className="font-display text-3xl md:text-4xl font-black text-gray-900 dark:text-gilded-ivory">
@@ -238,7 +238,7 @@ export default function AboutPage() {
               whileHover={{ y: -5, scale: 1.015 }}
               className="p-8 rounded-3xl border border-royal-gold/15 bg-white/40 dark:bg-zinc-950/20 hover:border-royal-gold/40 transition-all duration-300 shadow-sm flex flex-col md:flex-row gap-6 cursor-default"
             >
-              <div className="p-4 bg-royal-gold/10 text-royal-gold rounded-2xl h-fit w-fit flex items-center justify-center">
+              <div className="p-4 bg-royal-gold/10 text-royal-purple rounded-2xl h-fit w-fit flex items-center justify-center">
                 <phil.icon className="w-6 h-6 stroke-[1.5]" />
               </div>
               <div className="space-y-3">
@@ -257,7 +257,7 @@ export default function AboutPage() {
       {/* The Sovereign Court (Meet the Team) */}
       <section className="max-w-7xl mx-auto px-6 md:px-12 w-full mb-12">
         <div className="text-left max-w-2xl mb-16">
-          <span className="font-sans text-xs text-royal-gold font-semibold uppercase tracking-widest block mb-4">
+          <span className="font-sans text-xs text-royal-purple font-semibold uppercase tracking-widest block mb-4">
             The Sovereign Court
           </span>
           <h2 className="font-display text-3xl md:text-4xl font-black text-gray-900 dark:text-gilded-ivory">
@@ -285,11 +285,11 @@ export default function AboutPage() {
                     <h3 className="font-display text-xl font-bold text-gray-900 dark:text-gilded-ivory">
                       {member.name}
                     </h3>
-                    <p className="font-sans text-xs font-semibold text-royal-gold uppercase tracking-wider mt-1">
+                    <p className="font-sans text-xs font-semibold text-royal-purple uppercase tracking-wider mt-1">
                       {member.role}
                     </p>
                   </div>
-                  <div className="h-10 w-10 bg-royal-gold/10 rounded-full flex items-center justify-center text-royal-gold font-display text-sm font-bold border border-royal-gold/20">
+                  <div className="h-10 w-10 bg-royal-gold/10 rounded-full flex items-center justify-center text-royal-purple font-display text-sm font-bold border border-royal-gold/20">
                     {member.name.split(' ').map(n => n[0]).join('')}
                   </div>
                 </div>
@@ -300,7 +300,7 @@ export default function AboutPage() {
               </div>
 
               <div className="mt-8 pt-6 border-t border-royal-gold/15 space-y-3">
-                <Quote className="w-5 h-5 text-royal-gold/40" />
+                <Quote className="w-5 h-5 text-royal-purple/40" />
                 <p className="font-serif italic text-xs md:text-sm text-gray-800 dark:text-gray-300 leading-relaxed">
                   "{member.quote}"
                 </p>
@@ -314,10 +314,10 @@ export default function AboutPage() {
       <section className="bg-zinc-950 border-y border-royal-gold/10 py-32 px-6 md:px-12 text-gilded-ivory overflow-hidden relative w-full mt-24">
         <div className="max-w-7xl mx-auto relative z-10">
           <div className="text-center mb-24">
-            <span className="font-sans text-xs text-royal-gold font-semibold uppercase tracking-[0.2em] mb-3 block">
+            <span className="font-sans text-xs text-royal-purple font-semibold uppercase tracking-[0.2em] mb-3 block">
               Our Sovereign Journey
             </span>
-            <h2 className="font-display text-4xl sm:text-5xl font-black text-royal-gold mb-6">
+            <h2 className="font-display text-4xl sm:text-5xl font-black text-royal-purple mb-6">
               The Majesty Method
             </h2>
             <p className="font-sans text-sm md:text-base text-gray-400 max-w-xl mx-auto leading-relaxed">
@@ -338,7 +338,7 @@ export default function AboutPage() {
               className="group relative z-10 text-center space-y-4"
             >
               <div className="relative mb-8 flex justify-center">
-                <div className="h-24 w-24 rounded-full bg-zinc-950 border-2 border-royal-gold flex items-center justify-center text-royal-gold font-display text-3xl font-bold transition-transform duration-500 group-hover:scale-110">
+                <div className="h-24 w-24 rounded-full bg-zinc-950 border-2 border-royal-gold flex items-center justify-center text-royal-purple font-display text-3xl font-bold transition-transform duration-500 group-hover:scale-110">
                   01
                 </div>
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-32 w-32 bg-royal-gold/10 blur-xl rounded-full -z-10" />
@@ -358,7 +358,7 @@ export default function AboutPage() {
               className="group relative z-10 text-center space-y-4"
             >
               <div className="relative mb-8 flex justify-center">
-                <div className="h-24 w-24 rounded-full bg-zinc-950 border-2 border-royal-gold flex items-center justify-center text-royal-gold font-display text-3xl font-bold transition-transform duration-500 group-hover:scale-110">
+                <div className="h-24 w-24 rounded-full bg-zinc-950 border-2 border-royal-gold flex items-center justify-center text-royal-purple font-display text-3xl font-bold transition-transform duration-500 group-hover:scale-110">
                   02
                 </div>
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-32 w-32 bg-royal-gold/10 blur-xl rounded-full -z-10" />
@@ -378,7 +378,7 @@ export default function AboutPage() {
               className="group relative z-10 text-center space-y-4"
             >
               <div className="relative mb-8 flex justify-center">
-                <div className="h-24 w-24 rounded-full bg-zinc-950 border-2 border-royal-gold flex items-center justify-center text-royal-gold font-display text-3xl font-bold transition-transform duration-500 group-hover:scale-110">
+                <div className="h-24 w-24 rounded-full bg-zinc-950 border-2 border-royal-gold flex items-center justify-center text-royal-purple font-display text-3xl font-bold transition-transform duration-500 group-hover:scale-110">
                   03
                 </div>
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-32 w-32 bg-royal-gold/10 blur-xl rounded-full -z-10" />
@@ -393,7 +393,7 @@ export default function AboutPage() {
 
         {/* Decorative Text */}
         <div className="absolute -bottom-10 left-1/2 -translate-x-1/2 opacity-[0.03] select-none pointer-events-none hidden lg:block">
-          <span className="font-display text-[160px] font-black uppercase tracking-widest text-royal-gold">
+          <span className="font-display text-[160px] font-black uppercase tracking-widest text-royal-purple">
             EXCELLENCE
           </span>
         </div>
@@ -402,7 +402,7 @@ export default function AboutPage() {
       {/* Section 4: Team/Values Bento Grid */}
       <section className="py-32 px-6 md:px-12 max-w-7xl mx-auto w-full">
         <div className="text-left mb-16 max-w-2xl">
-          <span className="font-sans text-xs text-royal-gold font-semibold uppercase tracking-widest block mb-4">
+          <span className="font-sans text-xs text-royal-purple font-semibold uppercase tracking-widest block mb-4">
             Our Core Tenets
           </span>
           <h2 className="font-display text-3xl md:text-4xl font-black text-gray-900 dark:text-gilded-ivory">
@@ -434,7 +434,7 @@ export default function AboutPage() {
 
           {/* Card 2: Royal Blue Background Card */}
           <div className="md:col-span-4 bg-deep-violet dark:bg-violet-950 p-8 md:p-12 rounded-[32px] flex flex-col justify-between text-left text-gilded-ivory relative overflow-hidden group border border-royal-gold/20 shadow-2xl">
-            <div className="p-3 bg-royal-gold/10 border border-royal-gold/15 text-royal-gold rounded-2xl w-fit">
+            <div className="p-3 bg-royal-gold/10 border border-royal-gold/15 text-royal-purple rounded-2xl w-fit">
               <Users className="w-6 h-6 stroke-[1.5]" />
             </div>
             <div className="space-y-4 mt-8 md:mt-16">
@@ -447,7 +447,7 @@ export default function AboutPage() {
 
           {/* Card 3: Minimalist Border outline card */}
           <div className="md:col-span-4 border border-royal-gold/15 bg-white/40 dark:bg-black/10 p-8 md:p-12 rounded-[32px] flex flex-col justify-between text-left hover:border-royal-gold/40 transition-colors duration-300">
-            <div className="p-3 bg-royal-gold/10 text-royal-gold rounded-2xl w-fit">
+            <div className="p-3 bg-royal-gold/10 text-royal-purple rounded-2xl w-fit">
               <Target className="w-6 h-6 stroke-[1.5]" />
             </div>
             <div className="space-y-3 mt-8 md:mt-16">
@@ -479,7 +479,7 @@ export default function AboutPage() {
                 const element = document.getElementById('project-inquiry-box');
                 if (element) element.scrollIntoView({ behavior: 'smooth' });
               }}
-              className="h-20 w-20 rounded-full bg-deep-violet text-royal-gold hover:bg-zinc-950 transition-colors duration-300 flex items-center justify-center shrink-0 cursor-pointer shadow-xl"
+              className="h-20 w-20 rounded-full bg-deep-violet text-royal-purple hover:bg-zinc-950 transition-colors duration-300 flex items-center justify-center shrink-0 cursor-pointer shadow-xl"
             >
               <ArrowRight className="w-6 h-6" />
             </motion.div>
@@ -498,7 +498,7 @@ export default function AboutPage() {
           </div>
 
           <div className="relative z-10 max-w-2xl mx-auto space-y-8">
-            <span className="text-royal-gold font-sans text-xs md:text-sm font-bold tracking-[0.3em] uppercase block">
+            <span className="text-royal-purple font-sans text-xs md:text-sm font-bold tracking-[0.3em] uppercase block">
               Project Inquiry
             </span>
             <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl font-black text-gilded-ivory leading-tight">
@@ -544,12 +544,12 @@ export default function AboutPage() {
                   animate={{ opacity: 1, scale: 1 }}
                   className="p-8 rounded-2xl bg-royal-gold/10 border border-royal-gold/25 text-left max-w-xl mx-auto space-y-3"
                 >
-                  <div className="flex items-center gap-3 text-royal-gold font-display font-black text-lg">
-                    <Sparkles className="w-6 h-6 text-royal-gold" />
+                  <div className="flex items-center gap-3 text-royal-purple font-display font-black text-lg">
+                    <Sparkles className="w-6 h-6 text-royal-purple" />
                     <span>Summoning Received</span>
                   </div>
                   <p className="font-sans text-xs text-gray-200 leading-relaxed">
-                    Success! We have recorded your coordinates (<strong className="text-royal-gold">{summonEmail}</strong>). Our principal coordinates coordinators will analyze your market parameters and send transmission guidelines in 24 hours.
+                    Success! We have recorded your coordinates (<strong className="text-royal-purple">{summonEmail}</strong>). Our principal coordinates coordinators will analyze your market parameters and send transmission guidelines in 24 hours.
                   </p>
                 </motion.div>
               )}

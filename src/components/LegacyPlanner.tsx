@@ -95,8 +95,8 @@ export default function LegacyPlanner() {
         
         {/* Title */}
         <div className="text-center mb-12 space-y-3">
-          <span className="text-royal-gold font-sans font-bold uppercase tracking-widest text-xs flex items-center justify-center gap-2">
-            <Crown className="w-4.5 h-4.5 text-royal-gold" />
+          <span className="text-royal-purple font-sans font-bold uppercase tracking-widest text-xs flex items-center justify-center gap-2">
+            <Crown className="w-4.5 h-4.5 text-royal-purple" />
             Brand Consultation Tool
           </span>
           <h2 className="font-display text-4xl md:text-5xl font-black text-gray-900 dark:text-gilded-ivory">
@@ -126,7 +126,7 @@ export default function LegacyPlanner() {
                   {/* Brand Name */}
                   <div className="space-y-2">
                     <label className="block text-xs uppercase font-black tracking-widest text-gray-800 dark:text-gray-200">
-                      Brand or Royal House Name <span className="text-royal-gold">*</span>
+                      Brand or Royal House Name <span className="text-royal-purple">*</span>
                     </label>
                     <input
                       type="text"
@@ -141,7 +141,7 @@ export default function LegacyPlanner() {
                   {/* Representative email */}
                   <div className="space-y-2">
                     <label className="block text-xs uppercase font-black tracking-widest text-gray-800 dark:text-gray-200">
-                      Discerning Representative Email <span className="text-royal-gold">*</span>
+                      Discerning Representative Email <span className="text-royal-purple">*</span>
                     </label>
                     <input
                       type="email"
@@ -170,7 +170,7 @@ export default function LegacyPlanner() {
                           : 'border-royal-gold/15 bg-white/50 dark:bg-transparent hover:border-royal-gold/40'
                       }`}
                     >
-                      <span className="font-display font-bold block text-sm text-royal-gold">The Hidden Gem</span>
+                      <span className="font-display font-bold block text-sm text-royal-purple">The Hidden Gem</span>
                       <span className="text-xs text-gray-500 dark:text-gray-400 mt-1 block">Brilliant substance, pre-prestige status. Ready for instant ignition.</span>
                     </button>
 
@@ -183,7 +183,7 @@ export default function LegacyPlanner() {
                           : 'border-royal-gold/15 bg-white/50 dark:bg-transparent hover:border-royal-gold/40'
                       }`}
                     >
-                      <span className="font-display font-bold block text-sm text-royal-gold">Scaling Sovereign</span>
+                      <span className="font-display font-bold block text-sm text-royal-purple">Scaling Sovereign</span>
                       <span className="text-xs text-gray-500 dark:text-gray-400 mt-1 block">Experiencing high growth. Ready to dominate sector spaces.</span>
                     </button>
 
@@ -196,7 +196,7 @@ export default function LegacyPlanner() {
                           : 'border-royal-gold/15 bg-white/50 dark:bg-transparent hover:border-royal-gold/40'
                       }`}
                     >
-                      <span className="font-display font-bold block text-sm text-royal-gold">Established Court</span>
+                      <span className="font-display font-bold block text-sm text-royal-purple">Established Court</span>
                       <span className="text-xs text-gray-500 dark:text-gray-400 mt-1 block">Dominant presence. Ready to modernise visual code while honoring roots.</span>
                     </button>
 
@@ -218,12 +218,12 @@ export default function LegacyPlanner() {
                           onClick={() => toggleChannel(channel)}
                           className={`flex items-center gap-3 p-3.5 rounded-xl border text-left transition-colors cursor-pointer ${
                             isSelected
-                              ? 'border-royal-gold bg-royal-gold/5 text-royal-gold'
+                              ? 'border-royal-gold bg-royal-gold/5 text-royal-purple'
                               : 'border-royal-gold/15 bg-white/30 dark:bg-transparent text-gray-700 dark:text-gray-300'
                           }`}
                         >
                           {isSelected ? (
-                            <CheckSquare className="w-5 h-5 text-royal-gold shrink-0" />
+                            <CheckSquare className="w-5 h-5 text-royal-purple shrink-0" />
                           ) : (
                             <Square className="w-5 h-5 text-gray-400 shrink-0" />
                           )}
@@ -275,7 +275,7 @@ export default function LegacyPlanner() {
                   </div>
                   <button
                     onClick={resetForm}
-                    className="flex items-center gap-1.5 text-xs font-bold text-royal-gold p-1.5 hover:bg-royal-gold/10 rounded-lg"
+                    className="flex items-center gap-1.5 text-xs font-bold text-royal-purple p-1.5 hover:bg-royal-gold/10 rounded-lg"
                   >
                     <RefreshCw className="w-3.5 h-3.5" /> Re-Draft Inquiry
                   </button>
@@ -284,16 +284,16 @@ export default function LegacyPlanner() {
                 {/* Interactive insights cards */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div className="p-4 rounded-xl bg-royal-gold/10 border border-royal-gold/20 flex gap-3 items-start">
-                    <Lightbulb className="w-5 h-5 text-royal-gold shrink-0 mt-0.5" />
+                    <Lightbulb className="w-5 h-5 text-royal-purple shrink-0 mt-0.5" />
                     <div>
-                      <span className="text-[9px] uppercase font-black text-royal-gold tracking-widest block">Aesthetic Prescription</span>
+                      <span className="text-[9px] uppercase font-black text-royal-purple tracking-widest block">Aesthetic Prescription</span>
                       <strong className="text-gray-900 dark:text-gilded-ivory text-sm block mt-1">{computedReport.recommendedStyle}</strong>
                       <p className="text-xs text-gray-600 dark:text-gray-400 mt-1">{computedReport.primaryVibe}</p>
                     </div>
                   </div>
 
                   <div className="p-4 rounded-xl bg-royal-gold/15 border border-royal-gold/20 flex gap-3 items-start">
-                    <TrendingUp className="w-5 h-5 text-royal-gold shrink-0 mt-0.5" />
+                    <TrendingUp className="w-5 h-5 text-royal-purple shrink-0 mt-0.5" />
                     <div>
                       <span className="text-[9px] uppercase font-black text-smart-gold tracking-widest block">Projected Ramp Duration</span>
                       <strong className="text-gray-900 dark:text-gilded-ivory text-sm block mt-1">{computedReport.duration}</strong>
@@ -304,13 +304,13 @@ export default function LegacyPlanner() {
 
                 {/* Action steps based on calculations */}
                 <div className="space-y-3">
-                  <h4 className="font-display font-bold text-lg text-royal-gold flex items-center gap-2">
+                  <h4 className="font-display font-bold text-lg text-royal-purple flex items-center gap-2">
                     <FileText className="w-4.5 h-4.5" /> Recommended Deliverables Package
                   </h4>
                   <div className="space-y-2 max-h-[160px] overflow-y-auto pr-2">
                     {computedReport.assetList.map((asset: string, i: number) => (
                       <div key={i} className="flex gap-2.5 items-center p-2.5 rounded-lg bg-white dark:bg-black/20 border border-royal-gold/10 text-xs text-gray-700 dark:text-gray-300">
-                        <CheckCircle className="w-4 h-4 text-royal-gold" />
+                        <CheckCircle className="w-4 h-4 text-royal-purple" />
                         <span>{asset}</span>
                       </div>
                     ))}
@@ -335,7 +335,7 @@ export default function LegacyPlanner() {
                 animate={{ opacity: 1, scale: 1 }}
                 className="py-12 text-center space-y-6 relative z-10"
               >
-                <div className="w-16 h-16 bg-royal-gold/20 rounded-full flex items-center justify-center mx-auto border border-royal-gold text-royal-gold">
+                <div className="w-16 h-16 bg-royal-gold/20 rounded-full flex items-center justify-center mx-auto border border-royal-gold text-royal-purple">
                   <Crown className="w-8 h-8" />
                 </div>
                 
@@ -347,7 +347,7 @@ export default function LegacyPlanner() {
                 <div className="pt-6">
                   <button
                     onClick={resetForm}
-                    className="px-6 py-2.5 rounded-xl border border-royal-gold/40 text-royal-gold font-bold text-xs uppercase tracking-widest hover:bg-royal-gold/10 transition-colors cursor-pointer"
+                    className="px-6 py-2.5 rounded-xl border border-royal-gold/40 text-royal-purple font-bold text-xs uppercase tracking-widest hover:bg-royal-gold/10 transition-colors cursor-pointer"
                   >
                     Plan Another House
                   </button>
