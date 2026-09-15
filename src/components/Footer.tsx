@@ -3,7 +3,8 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import { Crown, Instagram, Linkedin, Twitter, Sparkles, ArrowRight } from 'lucide-react';
+import { Instagram, Linkedin, Twitter, Sparkles, ArrowRight } from 'lucide-react';
+import rayobaLogo from '../assets/images/regenerated_image_1780485140000.png';
 
 interface FooterProps {
   onScrollToSection: (sectionId: string) => void;
@@ -49,11 +50,11 @@ export default function Footer({ onScrollToSection }: FooterProps) {
               onClick={() => onScrollToSection('hero')}
               className="flex items-center gap-3 group"
             >
-              <div className="w-12 h-12 rounded-xl bg-royal-gold/10 border border-royal-gold/20 flex items-center justify-center text-royal-gold group-hover:scale-110 transition-transform duration-500">
-                <Crown className="w-6 h-6" />
+              <div className="w-12 h-12 rounded-xl bg-royal-gold/10 border border-royal-gold/20 flex items-center justify-center text-royal-gold group-hover:scale-110 transition-transform duration-500 overflow-hidden p-1.5">
+                <img src={rayobaLogo} alt="Rayoba Crest" className="w-full h-full object-contain" />
               </div>
               <span className="font-display text-3xl font-bold text-white tracking-tight">
-                Rayoba<span className="text-royal-gold">.</span>
+                Rayoba<span className="text-royal-purple">.</span>
               </span>
             </button>
             <p className="font-sans text-sm text-gray-400 max-w-sm leading-relaxed">
